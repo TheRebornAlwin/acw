@@ -8,771 +8,352 @@
   <meta property="og:title" content="AC Windows & Cleaning Services | Barry, Cardiff & The Vale">
   <meta property="og:description" content="Professional exterior cleaning services across Barry, Cardiff, and the Vale of Glamorgan. Windows, driveways, gutters, roofs — done right, on time, every time.">
   <meta property="og:image" content="https://4p4uvw3d9w.ufs.sh/f/GjfEcLvWS9LJCKuuEyJ48yVYURZTOdogIpMDvf52EiWr3Nn0">
-  <meta property="og:type" content="website">
   <link rel="icon" type="image/png" href="https://4p4uvw3d9w.ufs.sh/f/GjfEcLvWS9LJCKuuEyJ48yVYURZTOdogIpMDvf52EiWr3Nn0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   <style>
-    /* ===== RESET & BASE ===== */
-    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
-    html { scroll-behavior: smooth; scroll-padding-top: 80px; }
-    body {
-      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-      color: #111;
-      background: #fff;
-      line-height: 1.6;
-      font-size: 16px;
-      -webkit-font-smoothing: antialiased;
-    }
-    img { max-width: 100%; height: auto; display: block; }
-    a { text-decoration: none; color: inherit; }
-    ul { list-style: none; }
+    *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+    html{scroll-behavior:smooth;scroll-padding-top:80px}
+    body{font-family:'Inter',system-ui,sans-serif;color:#111;background:#fff;line-height:1.6;-webkit-font-smoothing:antialiased}
+    img{max-width:100%;height:auto;display:block}
+    a{text-decoration:none;color:inherit}
+    ul{list-style:none}
 
-    /* ===== VARIABLES ===== */
-    :root {
-      --blue: #3384ed;
-      --blue-dark: #2a6fd4;
-      --blue-light: rgba(51, 132, 237, 0.08);
-      --cyan: #aefde3;
-      --cyan-dark: #8ce8cc;
-      --black: #111;
-      --gray-50: #f8f9fa;
-      --gray-100: #f0f0f0;
-      --gray-200: #e5e7eb;
-      --gray-400: #9ca3af;
-      --gray-600: #555;
-      --gray-800: #333;
-      --white: #ffffff;
-      --star: #f59e0b;
-      --shadow-sm: 0 1px 3px rgba(0,0,0,0.08);
-      --shadow-md: 0 4px 16px rgba(0,0,0,0.08);
-      --shadow-lg: 0 12px 32px rgba(0,0,0,0.1);
-      --radius: 12px;
-      --radius-sm: 8px;
-      --max-width: 1200px;
-      --header-h: 72px;
+    :root{
+      --blue:#1a6bff;--blue-dark:#0f52cc;--blue-light:rgba(26,107,255,0.06);
+      --cyan:#6cffc8;--cyan-dark:#3de8a5;--cyan-glow:rgba(108,255,200,0.15);
+      --accent:#ff6b35;--accent-light:rgba(255,107,53,0.08);
+      --black:#0a0f1c;--white:#fff;
+      --g50:#f5f7fa;--g100:#ebeef3;--g200:#dce1e9;--g400:#8c95a6;--g600:#4a5568;--g800:#2d3748;
+      --star:#f59e0b;
+      --r:14px;--r-sm:8px;--r-lg:24px;--r-xl:32px;
+      --max:1200px;--hdr:72px;
+      --shadow:0 4px 24px rgba(10,15,28,0.08);
+      --shadow-lg:0 20px 60px rgba(10,15,28,0.12);
+      --shadow-xl:0 32px 80px rgba(10,15,28,0.16);
+      --grain:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");
     }
 
-    /* ===== TYPOGRAPHY ===== */
-    h1 { font-size: clamp(2rem, 5vw, 3.5rem); font-weight: 800; line-height: 1.1; letter-spacing: -0.02em; }
-    h2 { font-size: clamp(1.6rem, 4vw, 2.5rem); font-weight: 700; line-height: 1.2; letter-spacing: -0.01em; }
-    h3 { font-size: clamp(1.15rem, 2.5vw, 1.4rem); font-weight: 700; line-height: 1.3; }
-    p { font-size: clamp(0.95rem, 1.5vw, 1.05rem); color: var(--gray-600); }
+    h1,h2,h3{font-family:'Outfit',system-ui,sans-serif}
+    h1{font-size:clamp(2.4rem,6vw,4.2rem);font-weight:900;line-height:1.05;letter-spacing:-0.04em}
+    h2{font-size:clamp(1.8rem,4.5vw,3rem);font-weight:800;line-height:1.1;letter-spacing:-0.03em}
+    h3{font-size:clamp(1.15rem,2.5vw,1.4rem);font-weight:700;line-height:1.3}
+    p{font-size:clamp(0.95rem,1.5vw,1.05rem);color:var(--g600)}
 
-    /* ===== UTILITIES ===== */
-    .container { max-width: var(--max-width); margin: 0 auto; padding: 0 1.5rem; }
-    .section { padding: 5rem 0; }
-    .section-alt { background: var(--gray-50); }
-    .section-header { text-align: center; margin-bottom: 3rem; }
-    .section-header p { max-width: 640px; margin: 0.75rem auto 0; }
-    .section-label {
-      display: inline-block;
-      font-size: 0.8rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-      color: var(--blue);
-      margin-bottom: 0.5rem;
-    }
+    .container{max-width:var(--max);margin:0 auto;padding:0 1.5rem}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:0.5rem;min-height:52px;padding:14px 32px;font-size:0.95rem;font-weight:700;font-family:'Outfit',system-ui,sans-serif;border-radius:var(--r);border:none;cursor:pointer;transition:all 0.3s cubic-bezier(0.4,0,0.2,1);white-space:nowrap;position:relative;overflow:hidden}
+    .btn::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(255,255,255,0.2),transparent);opacity:0;transition:opacity 0.3s}
+    .btn:hover::before{opacity:1}
+    .btn-primary{background:var(--blue);color:#fff;box-shadow:0 4px 20px rgba(26,107,255,0.35)}
+    .btn-primary:hover{background:var(--blue-dark);transform:translateY(-3px);box-shadow:0 12px 32px rgba(26,107,255,0.4)}
+    .btn-outline{background:transparent;color:var(--blue);border:2px solid var(--blue)}
+    .btn-outline:hover{background:var(--blue);color:#fff;transform:translateY(-3px)}
+    .btn-white{background:#fff;color:var(--blue);box-shadow:0 4px 20px rgba(0,0,0,0.1)}
+    .btn-white:hover{transform:translateY(-3px);box-shadow:0 12px 32px rgba(0,0,0,0.15)}
+    .btn svg{width:18px;height:18px;flex-shrink:0}
 
-    /* ===== BUTTONS ===== */
-    .btn {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      gap: 0.5rem;
-      min-height: 48px;
-      padding: 14px 32px;
-      font-size: 1rem;
-      font-weight: 600;
-      font-family: inherit;
-      border-radius: var(--radius-sm);
-      border: none;
-      cursor: pointer;
-      transition: all 0.2s ease;
-      white-space: nowrap;
-    }
-    .btn-primary { background: var(--blue); color: #fff; }
-    .btn-primary:hover { background: var(--blue-dark); transform: translateY(-2px); box-shadow: 0 4px 16px rgba(51,132,237,0.35); }
-    .btn-outline { background: transparent; color: var(--blue); border: 2px solid var(--blue); }
-    .btn-outline:hover { background: var(--blue); color: #fff; }
-    .btn-white { background: #fff; color: var(--blue); }
-    .btn-white:hover { background: var(--gray-50); transform: translateY(-2px); box-shadow: var(--shadow-md); }
-    .btn-dark { background: var(--black); color: #fff; }
-    .btn-dark:hover { background: #222; transform: translateY(-2px); box-shadow: var(--shadow-lg); }
+    /* Highlight text effect */
+    .highlight{position:relative;display:inline;white-space:nowrap}
+    .highlight::after{content:'';position:absolute;bottom:0;left:-4px;right:-4px;height:38%;background:linear-gradient(135deg,var(--cyan),rgba(108,255,200,0.4));z-index:-1;border-radius:4px;transform:skewX(-2deg) rotate(-0.5deg)}
+
+    /* Section label pill */
+    .label{display:inline-flex;align-items:center;gap:0.4rem;font-size:0.7rem;font-weight:700;text-transform:uppercase;letter-spacing:0.14em;font-family:'Outfit',system-ui,sans-serif;color:var(--blue);background:var(--blue-light);padding:7px 16px;border-radius:var(--r-sm);margin-bottom:0.75rem;border:1px solid rgba(26,107,255,0.1)}
+
+    /* Wave dividers */
+    .wave{position:relative;width:100%;overflow:hidden;line-height:0}
+    .wave svg{display:block;width:100%;height:auto}
+
+    /* Decorative blobs */
+    .blob{position:absolute;border-radius:50%;filter:blur(70px);pointer-events:none;z-index:0}
+
+    /* Grain overlay for sections */
+    .has-grain::after{content:'';position:absolute;inset:0;background-image:var(--grain);background-repeat:repeat;pointer-events:none;z-index:0;opacity:0.5}
 
     /* ===== HEADER ===== */
-    .header {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: var(--header-h);
-      z-index: 1000;
-      background: rgba(255,255,255,0.92);
-      backdrop-filter: blur(12px);
-      -webkit-backdrop-filter: blur(12px);
-      border-bottom: 1px solid var(--gray-200);
-      transition: transform 0.3s ease;
-    }
-    .header.hidden { transform: translateY(-100%); }
-    .header-inner {
-      max-width: var(--max-width);
-      margin: 0 auto;
-      padding: 0 1.5rem;
-      height: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
-    .header-logo img { height: 48px; width: auto; }
-    .header-nav { display: flex; align-items: center; gap: 2rem; }
-    .header-nav a {
-      font-size: 0.9rem;
-      font-weight: 500;
-      color: var(--gray-800);
-      position: relative;
-      transition: color 0.2s;
-    }
-    .header-nav a::after {
-      content: '';
-      position: absolute;
-      bottom: -4px;
-      left: 0;
-      width: 0;
-      height: 2px;
-      background: var(--blue);
-      transition: width 0.3s ease;
-    }
-    .header-nav a:hover { color: var(--blue); }
-    .header-nav a:hover::after { width: 100%; }
-    .header-cta { display: flex; align-items: center; gap: 1rem; }
-    .header-phone {
-      font-weight: 600;
-      font-size: 0.9rem;
-      color: var(--black);
-      display: flex;
-      align-items: center;
-      gap: 0.4rem;
-    }
-    .header-phone svg { width: 18px; height: 18px; color: var(--blue); }
-
-    /* Hamburger */
-    .hamburger {
-      display: none;
-      flex-direction: column;
-      gap: 5px;
-      background: none;
-      border: none;
-      cursor: pointer;
-      padding: 8px;
-      z-index: 1001;
-    }
-    .hamburger span {
-      display: block;
-      width: 24px;
-      height: 2px;
-      background: var(--black);
-      transition: all 0.3s ease;
-      border-radius: 2px;
-    }
-    .hamburger.active span:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); }
-    .hamburger.active span:nth-child(2) { opacity: 0; }
-    .hamburger.active span:nth-child(3) { transform: rotate(-45deg) translate(5px, -5px); }
-
-    /* Mobile menu */
-    .mobile-menu {
-      display: none;
-      position: fixed;
-      inset: 0;
-      background: rgba(255,255,255,0.98);
-      backdrop-filter: blur(20px);
-      z-index: 999;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      gap: 2rem;
-    }
-    .mobile-menu.active { display: flex; }
-    .mobile-menu a {
-      font-size: 1.25rem;
-      font-weight: 600;
-      color: var(--black);
-      transition: color 0.2s;
-    }
-    .mobile-menu a:hover { color: var(--blue); }
+    .header{position:fixed;top:0;left:0;width:100%;height:var(--hdr);z-index:1000;background:rgba(255,255,255,0.7);backdrop-filter:blur(20px) saturate(1.8);-webkit-backdrop-filter:blur(20px) saturate(1.8);transition:transform 0.4s cubic-bezier(0.4,0,0.2,1),box-shadow 0.4s ease,background 0.4s ease}
+    .header.scrolled{box-shadow:0 1px 20px rgba(10,15,28,0.06);background:rgba(255,255,255,0.92)}
+    .header.hidden{transform:translateY(-100%)}
+    .header-inner{max-width:var(--max);margin:0 auto;padding:0 1.5rem;height:100%;display:flex;align-items:center;justify-content:space-between}
+    .header-logo img{height:46px;width:auto}
+    .header-nav{display:flex;align-items:center;gap:0.35rem}
+    .header-nav a{font-size:0.85rem;font-weight:600;font-family:'Outfit',system-ui,sans-serif;color:var(--g600);padding:6px 14px;border-radius:var(--r-sm);transition:all 0.25s}
+    .header-nav a:hover{color:var(--blue);background:var(--blue-light)}
+    .header-cta{display:flex;align-items:center;gap:0.75rem}
+    .header-phone{font-weight:700;font-size:0.85rem;font-family:'Outfit',system-ui,sans-serif;color:var(--black);display:flex;align-items:center;gap:0.35rem}
+    .header-phone svg{width:16px;height:16px;color:var(--blue)}
+    .hamburger{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:8px;z-index:1001}
+    .hamburger span{display:block;width:22px;height:2px;background:var(--black);transition:all 0.3s;border-radius:2px}
+    .hamburger.active span:nth-child(1){transform:rotate(45deg) translate(5px,5px)}
+    .hamburger.active span:nth-child(2){opacity:0}
+    .hamburger.active span:nth-child(3){transform:rotate(-45deg) translate(5px,-5px)}
+    .mobile-menu{display:none;position:fixed;inset:0;background:rgba(255,255,255,0.97);backdrop-filter:blur(24px);z-index:999;flex-direction:column;align-items:center;justify-content:center;gap:1.5rem}
+    .mobile-menu.active{display:flex}
+    .mobile-menu a{font-size:1.3rem;font-weight:700;font-family:'Outfit',system-ui,sans-serif;color:var(--black);padding:8px 24px;border-radius:var(--r);transition:all 0.2s}
+    .mobile-menu a:hover{background:var(--blue-light);color:var(--blue)}
 
     /* ===== HERO ===== */
-    .hero {
-      padding-top: calc(var(--header-h) + 3rem);
-      padding-bottom: 0;
-      background: linear-gradient(180deg, var(--gray-50) 0%, var(--white) 100%);
-      overflow: hidden;
-    }
-    .hero-inner {
-      max-width: var(--max-width);
-      margin: 0 auto;
-      padding: 0 1.5rem;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 3rem;
-      align-items: center;
-    }
-    .hero-content { max-width: 560px; }
-    .hero-content h1 { margin-bottom: 1rem; }
-    .hero-content h1 span { color: var(--blue); }
-    .hero-content > p { font-size: clamp(1rem, 2vw, 1.15rem); margin-bottom: 2rem; color: var(--gray-600); line-height: 1.7; }
-    .hero-buttons { display: flex; flex-wrap: wrap; gap: 0.75rem; margin-bottom: 2rem; }
-    .hero-trust {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 1.5rem;
-      margin-top: 0.5rem;
-    }
-    .hero-trust-item {
-      display: flex;
-      align-items: center;
-      gap: 0.4rem;
-      font-size: 0.85rem;
-      font-weight: 500;
-      color: var(--gray-600);
-    }
-    .hero-trust-item svg { width: 18px; height: 18px; flex-shrink: 0; }
-
-    .hero-videos {
-      display: flex;
-      gap: 4px;
-      justify-content: center;
-      border-radius: var(--radius);
-      overflow: hidden;
-      box-shadow: var(--shadow-lg);
-      max-height: 520px;
-    }
-    .video-col {
-      position: relative;
-      flex: 1;
-      min-width: 0;
-    }
-    .video-col iframe {
-      width: 100%;
-      height: 100%;
-      min-height: 450px;
-      border: none;
-      display: block;
-    }
-    .video-label {
-      position: absolute;
-      top: 12px;
-      left: 50%;
-      transform: translateX(-50%);
-      z-index: 10;
-      background: rgba(0,0,0,0.65);
-      color: #fff;
-      font-size: 0.7rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.12em;
-      padding: 4px 14px;
-      border-radius: 20px;
-      backdrop-filter: blur(4px);
-    }
+    .hero{position:relative;padding:calc(var(--hdr) + 4rem) 0 0;overflow:hidden;background:var(--black);min-height:100vh}
+    .hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 80% 60% at 70% 40%,rgba(26,107,255,0.15),transparent 70%),radial-gradient(ellipse 50% 50% at 20% 80%,var(--cyan-glow),transparent 60%);z-index:1}
+    .hero::after{content:'';position:absolute;bottom:0;left:0;right:0;height:200px;background:linear-gradient(to top,var(--black),transparent);z-index:1}
+    .hero .blob-1{width:600px;height:600px;background:var(--blue);opacity:0.08;top:-150px;right:-100px}
+    .hero .blob-2{width:400px;height:400px;background:var(--cyan);opacity:0.06;bottom:100px;left:-120px}
+    .hero-inner{max-width:var(--max);margin:0 auto;padding:0 1.5rem;display:grid;grid-template-columns:1.1fr 0.9fr;gap:3rem;align-items:center;position:relative;z-index:2}
+    .hero-content{max-width:600px}
+    .hero-content h1{margin-bottom:1.25rem;color:#fff}
+    .hero-content h1 .highlight::after{background:linear-gradient(135deg,var(--cyan),rgba(26,107,255,0.5))}
+    .hero-content>p{font-size:clamp(1rem,2vw,1.15rem);margin-bottom:2.25rem;color:rgba(255,255,255,0.6);line-height:1.8}
+    .hero-buttons{display:flex;flex-wrap:wrap;gap:0.75rem;margin-bottom:2.5rem}
+    .hero .btn-outline{color:rgba(255,255,255,0.9);border-color:rgba(255,255,255,0.2)}
+    .hero .btn-outline:hover{background:rgba(255,255,255,0.1);border-color:rgba(255,255,255,0.4);color:#fff}
+    .hero-badges{display:flex;flex-wrap:wrap;gap:0.6rem}
+    .hero-badge{display:flex;align-items:center;gap:0.35rem;font-size:0.75rem;font-weight:600;font-family:'Outfit',system-ui,sans-serif;color:rgba(255,255,255,0.7);background:rgba(255,255,255,0.06);padding:8px 16px;border-radius:var(--r-sm);border:1px solid rgba(255,255,255,0.08);backdrop-filter:blur(8px)}
+    .hero-badge svg{width:15px;height:15px;flex-shrink:0}
+    .hero .label{color:var(--cyan);background:rgba(108,255,200,0.08);border-color:rgba(108,255,200,0.15)}
+    .hero-videos{display:flex;gap:3px;border-radius:var(--r-lg);overflow:hidden;box-shadow:0 24px 80px rgba(0,0,0,0.4);position:relative;max-height:520px}
+    .hero-videos::before{content:'';position:absolute;inset:-2px;border-radius:calc(var(--r-lg) + 2px);background:linear-gradient(135deg,var(--blue),var(--cyan));z-index:-1}
+    .video-col{position:relative;flex:1;min-width:0}
+    .video-col iframe{width:100%;height:100%;min-height:460px;border:none;display:block}
+    .video-label{position:absolute;top:12px;left:50%;transform:translateX(-50%);z-index:10;background:rgba(0,0,0,0.5);color:#fff;font-size:0.6rem;font-weight:700;font-family:'Outfit',system-ui,sans-serif;text-transform:uppercase;letter-spacing:0.14em;padding:5px 14px;border-radius:var(--r-sm);backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,0.1)}
 
     /* ===== TRUST BAR ===== */
-    .trust-bar {
-      background: var(--white);
-      border-top: 1px solid var(--gray-200);
-      border-bottom: 1px solid var(--gray-200);
-      padding: 1.25rem 0;
-    }
-    .trust-bar-inner {
-      max-width: var(--max-width);
-      margin: 0 auto;
-      padding: 0 1.5rem;
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 2rem;
-    }
-    .trust-item {
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
-      font-size: 0.9rem;
-      font-weight: 600;
-      color: var(--gray-800);
-    }
-    .trust-item svg { width: 22px; height: 22px; color: var(--blue); flex-shrink: 0; }
+    .trust-bar{padding:0;background:var(--white);position:relative;z-index:2;border-bottom:1px solid var(--g100)}
+    .trust-bar-inner{max-width:var(--max);margin:0 auto;padding:0;display:grid;grid-template-columns:repeat(4,1fr)}
+    .trust-item{display:flex;align-items:center;justify-content:center;gap:0.6rem;font-size:0.82rem;font-weight:600;font-family:'Outfit',system-ui,sans-serif;color:var(--g800);padding:1.1rem 1rem;border-right:1px solid var(--g100);transition:all 0.3s}
+    .trust-item:last-child{border-right:none}
+    .trust-item:hover{background:var(--blue-light);color:var(--blue)}
+    .trust-item svg{width:20px;height:20px;color:var(--blue);flex-shrink:0}
 
     /* ===== SERVICES ===== */
-    .services-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
-      gap: 1.5rem;
-    }
-    .service-card {
-      background: var(--white);
-      border: 1px solid var(--gray-200);
-      border-radius: var(--radius);
-      overflow: hidden;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-    .service-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); }
-    .service-card-img {
-      height: 220px;
-      overflow: hidden;
-    }
-    .service-card-img img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      transition: transform 0.4s ease;
-    }
-    .service-card:hover .service-card-img img { transform: scale(1.05); }
-    .service-card-body { padding: 1.5rem; }
-    .service-card-body h3 { margin-bottom: 0.5rem; }
-    .service-card-body p { font-size: 0.92rem; line-height: 1.65; }
+    .services-section{position:relative;padding:6rem 0 7rem;overflow:hidden;background:var(--white)}
+    .services-section .blob-1{width:400px;height:400px;background:var(--blue);opacity:0.03;top:100px;right:-150px}
+    .services-header{text-align:center;margin-bottom:4rem;position:relative;z-index:1}
+    .services-header p{max-width:560px;margin:0.75rem auto 0;line-height:1.7}
+    /* Bento grid layout */
+    .services-layout{display:grid;grid-template-columns:1fr 1fr;gap:1rem;position:relative;z-index:1}
+    .service-card{background:var(--white);border:1px solid var(--g200);border-radius:var(--r-lg);overflow:hidden;transition:all 0.4s cubic-bezier(0.4,0,0.2,1);position:relative}
+    .service-card:hover{transform:translateY(-6px);box-shadow:var(--shadow-xl);border-color:transparent}
+    .service-card::after{content:'';position:absolute;inset:0;border-radius:var(--r-lg);background:linear-gradient(135deg,rgba(26,107,255,0.03),transparent);opacity:0;transition:opacity 0.4s}
+    .service-card:hover::after{opacity:1}
+    .service-card-img{height:220px;overflow:hidden;position:relative}
+    .service-card-img::after{content:'';position:absolute;bottom:0;left:0;right:0;height:60%;background:linear-gradient(to top,rgba(10,15,28,0.5),transparent);z-index:1}
+    .service-card-img img{width:100%;height:100%;object-fit:cover;transition:transform 0.6s cubic-bezier(0.4,0,0.2,1)}
+    .service-card:hover .service-card-img img{transform:scale(1.08)}
+    .service-card-body{padding:1.5rem 1.5rem 1.75rem}
+    .service-card-body h3{margin-bottom:0.5rem;display:flex;align-items:center;gap:0.5rem}
+    .service-card-body h3 .icon-dot{width:8px;height:8px;border-radius:3px;background:var(--cyan);flex-shrink:0;transform:rotate(45deg)}
+    .service-card-body p{font-size:0.9rem;line-height:1.7}
+    .service-card-featured{grid-column:span 2;display:grid;grid-template-columns:1.1fr 0.9fr}
+    .service-card-featured .service-card-img{height:100%;min-height:300px}
+    .service-card-featured .service-card-img::after{background:linear-gradient(to right,transparent 60%,rgba(10,15,28,0.3))}
+    .service-card-featured .service-card-body{display:flex;flex-direction:column;justify-content:center;padding:2.5rem 2.5rem 2.5rem 2rem}
+    .service-card-featured .service-card-body p{font-size:0.95rem}
 
     /* ===== HOW IT WORKS ===== */
-    .steps-grid {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 2rem;
-      position: relative;
-    }
-    .steps-grid::before {
-      content: '';
-      position: absolute;
-      top: 32px;
-      left: 10%;
-      right: 10%;
-      height: 2px;
-      background: var(--gray-200);
-      z-index: 0;
-    }
-    .step {
-      text-align: center;
-      position: relative;
-      z-index: 1;
-    }
-    .step-number {
-      width: 64px;
-      height: 64px;
-      border-radius: 50%;
-      background: var(--blue);
-      color: #fff;
-      font-size: 1.5rem;
-      font-weight: 800;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin: 0 auto 1rem;
-      box-shadow: 0 4px 12px rgba(51,132,237,0.3);
-    }
-    .step h3 { margin-bottom: 0.4rem; font-size: 1.05rem; }
-    .step p { font-size: 0.88rem; }
+    .process-section{padding:6rem 0 7rem;background:var(--g50);position:relative;overflow:hidden}
+    .process-section::before{content:'';position:absolute;top:-200px;left:50%;transform:translateX(-50%);width:800px;height:800px;background:radial-gradient(circle,rgba(26,107,255,0.04),transparent 70%);pointer-events:none}
+    .process-header{text-align:center;margin-bottom:4rem}
+    .process-header p{max-width:520px;margin:0.75rem auto 0}
+    .process-steps-row{display:grid;grid-template-columns:repeat(4,1fr);gap:1.5rem;max-width:var(--max);margin:0 auto;padding:0 1.5rem;position:relative}
+    .process-steps-row::before{content:'';position:absolute;top:40px;left:calc(12.5% + 0.75rem);right:calc(12.5% + 0.75rem);height:2px;background:linear-gradient(90deg,var(--blue),var(--cyan));opacity:0.2;z-index:0}
+    .process-step-card{text-align:center;position:relative;z-index:1}
+    .step-number{width:56px;height:56px;border-radius:var(--r);background:var(--black);color:#fff;font-size:1.15rem;font-weight:800;font-family:'Outfit',system-ui,sans-serif;display:flex;align-items:center;justify-content:center;margin:0 auto 1.25rem;box-shadow:0 8px 24px rgba(10,15,28,0.15);position:relative}
+    .step-number::after{content:'';position:absolute;inset:-3px;border-radius:calc(var(--r) + 3px);background:linear-gradient(135deg,var(--blue),var(--cyan));z-index:-1;opacity:0.5}
+    .step-visual{margin-bottom:1rem}
+    .step-visual img{width:100%;height:140px;object-fit:cover;border-radius:var(--r);box-shadow:var(--shadow)}
+    .step-content h3{margin-bottom:0.35rem;font-size:1.05rem}
+    .step-content p{font-size:0.88rem;line-height:1.65}
 
     /* ===== GALLERY ===== */
-    .gallery-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 0.75rem;
-    }
-    .gallery-item {
-      position: relative;
-      border-radius: var(--radius-sm);
-      overflow: hidden;
-      cursor: pointer;
-      aspect-ratio: 4 / 3;
-    }
-    .gallery-item img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      transition: transform 0.4s ease;
-    }
-    .gallery-item:hover img { transform: scale(1.05); }
-    .gallery-item-overlay {
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(to top, rgba(0,0,0,0.5) 0%, transparent 50%);
-      opacity: 0;
-      transition: opacity 0.3s ease;
-      display: flex;
-      align-items: flex-end;
-      padding: 1rem;
-    }
-    .gallery-item:hover .gallery-item-overlay { opacity: 1; }
-    .gallery-item-overlay span {
-      color: #fff;
-      font-size: 0.8rem;
-      font-weight: 600;
-    }
-    /* B&A pair item */
-    .gallery-ba-pair {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 0;
-      aspect-ratio: 8/3;
-    }
-    .gallery-ba-pair img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-    .gallery-ba-pair .ba-label {
-      position: absolute;
-      bottom: 8px;
-      font-size: 0.65rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.1em;
-      color: #fff;
-      background: rgba(0,0,0,0.6);
-      padding: 2px 10px;
-      border-radius: 12px;
-    }
-    .gallery-ba-pair .ba-label-before { left: 8px; }
-    .gallery-ba-pair .ba-label-after { right: 8px; }
-    .ba-badge {
-      position: absolute;
-      top: 8px;
-      right: 8px;
-      z-index: 2;
-      background: var(--blue);
-      color: #fff;
-      font-size: 0.65rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-      padding: 3px 10px;
-      border-radius: 12px;
-    }
-
-    /* Show more button */
-    .gallery-toggle {
-      text-align: center;
-      margin-top: 1.5rem;
-    }
-    .gallery-hidden { display: none; }
-    .gallery-hidden.show { display: grid; margin-top: 0.75rem; }
+    .gallery-section{padding:6rem 0 5rem;position:relative;overflow:hidden}
+    .gallery-header{text-align:center;margin-bottom:3.5rem}
+    .gallery-header p{max-width:560px;margin:0.75rem auto 0}
+    .gallery-masonry{columns:3;column-gap:0.6rem}
+    .gallery-item{break-inside:avoid;margin-bottom:0.6rem;border-radius:var(--r);overflow:hidden;cursor:pointer;position:relative}
+    .gallery-item img{width:100%;display:block;transition:transform 0.6s cubic-bezier(0.4,0,0.2,1),filter 0.4s}
+    .gallery-item:hover img{transform:scale(1.05);filter:brightness(1.05)}
+    .gallery-item::after{content:'';position:absolute;inset:0;background:linear-gradient(to top,rgba(10,15,28,0.6) 0%,transparent 50%);opacity:0;transition:opacity 0.4s}
+    .gallery-item:hover::after{opacity:1}
+    .ba-badge{position:absolute;top:10px;right:10px;z-index:2;background:var(--blue);color:#fff;font-size:0.55rem;font-weight:700;font-family:'Outfit',system-ui,sans-serif;text-transform:uppercase;letter-spacing:0.12em;padding:5px 12px;border-radius:var(--r-sm)}
+    .gallery-ba-pair{display:grid;grid-template-columns:1fr 1fr;gap:0;position:relative}
+    .gallery-ba-pair img{width:100%;height:100%;object-fit:cover}
+    .ba-label{position:absolute;bottom:8px;font-size:0.55rem;font-weight:700;font-family:'Outfit',system-ui,sans-serif;text-transform:uppercase;letter-spacing:0.12em;color:#fff;background:rgba(0,0,0,0.5);padding:3px 10px;border-radius:var(--r-sm);z-index:3;backdrop-filter:blur(4px)}
+    .ba-label-before{left:8px}
+    .ba-label-after{right:8px}
+    .gallery-toggle{text-align:center;margin-top:2.5rem}
+    .gallery-hidden{display:none}
+    .gallery-hidden.show{display:block}
 
     /* Lightbox */
-    .lightbox {
-      display: none;
-      position: fixed;
-      inset: 0;
-      z-index: 2000;
-      background: rgba(0,0,0,0.92);
-      align-items: center;
-      justify-content: center;
-      padding: 2rem;
-    }
-    .lightbox.active { display: flex; }
-    .lightbox img {
-      max-width: 90vw;
-      max-height: 85vh;
-      object-fit: contain;
-      border-radius: var(--radius-sm);
-    }
-    .lightbox-close {
-      position: absolute;
-      top: 1.5rem;
-      right: 1.5rem;
-      background: none;
-      border: none;
-      color: #fff;
-      font-size: 2rem;
-      cursor: pointer;
-      width: 48px;
-      height: 48px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-    .lightbox-nav {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      background: rgba(255,255,255,0.15);
-      border: none;
-      color: #fff;
-      font-size: 1.5rem;
-      width: 48px;
-      height: 48px;
-      border-radius: 50%;
-      cursor: pointer;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      transition: background 0.2s;
-    }
-    .lightbox-nav:hover { background: rgba(255,255,255,0.3); }
-    .lightbox-prev { left: 1.5rem; }
-    .lightbox-next { right: 1.5rem; }
+    .lightbox{display:none;position:fixed;inset:0;z-index:2000;background:rgba(10,15,28,0.95);backdrop-filter:blur(20px);align-items:center;justify-content:center;padding:2rem}
+    .lightbox.active{display:flex}
+    .lightbox img{max-width:90vw;max-height:85vh;object-fit:contain;border-radius:var(--r-lg)}
+    .lightbox-close{position:absolute;top:1.5rem;right:1.5rem;background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.1);color:#fff;font-size:1.5rem;cursor:pointer;width:48px;height:48px;border-radius:var(--r);display:flex;align-items:center;justify-content:center;transition:all 0.25s}
+    .lightbox-close:hover{background:rgba(255,255,255,0.15)}
+    .lightbox-nav{position:absolute;top:50%;transform:translateY(-50%);background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.1);color:#fff;font-size:1.5rem;width:48px;height:48px;border-radius:var(--r);cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all 0.25s}
+    .lightbox-nav:hover{background:rgba(255,255,255,0.15)}
+    .lightbox-prev{left:1.5rem}
+    .lightbox-next{right:1.5rem}
 
     /* ===== REVIEWS ===== */
-    .reviews-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 1.5rem;
-    }
-    .review-card {
-      background: var(--white);
-      border: 1px solid var(--gray-200);
-      border-radius: var(--radius);
-      padding: 1.75rem;
-      display: flex;
-      flex-direction: column;
-      gap: 1rem;
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
-    }
-    .review-card:hover { transform: translateY(-2px); box-shadow: var(--shadow-md); }
-    .review-stars { display: flex; gap: 2px; }
-    .review-stars svg { width: 18px; height: 18px; fill: var(--star); }
-    .review-text { font-size: 0.95rem; line-height: 1.7; color: var(--gray-800); flex-grow: 1; }
-    .review-author { font-size: 0.85rem; font-weight: 600; color: var(--black); }
-    .review-location { font-size: 0.8rem; color: var(--gray-400); }
+    .reviews-section{padding:6rem 0;background:var(--black);overflow:hidden;position:relative}
+    .reviews-section::before{content:'';position:absolute;top:0;left:0;right:0;bottom:0;background:radial-gradient(ellipse 60% 50% at 50% 0%,rgba(26,107,255,0.08),transparent);pointer-events:none}
+    .reviews-header{text-align:center;margin-bottom:3rem;position:relative;z-index:1}
+    .reviews-header .label{color:var(--cyan);background:rgba(108,255,200,0.08);border-color:rgba(108,255,200,0.15)}
+    .reviews-header h2{color:#fff}
+    .reviews-header p{max-width:540px;margin:0.75rem auto 0;color:rgba(255,255,255,0.5)}
+    /* Rating highlight */
+    .rating-big{display:inline-flex;align-items:center;gap:0.75rem;background:rgba(255,255,255,0.06);padding:12px 24px;border-radius:var(--r);border:1px solid rgba(255,255,255,0.08);margin-bottom:1.5rem;backdrop-filter:blur(8px)}
+    .rating-big .stars{display:flex;gap:2px}
+    .rating-big .stars svg{width:20px;height:20px;fill:var(--star)}
+    .rating-big span{font-weight:800;font-size:1.1rem;color:#fff;font-family:'Outfit',system-ui,sans-serif}
+    /* Marquee */
+    .marquee-container{position:relative}
+    .marquee-container::before,.marquee-container::after{content:'';position:absolute;top:0;bottom:0;width:100px;z-index:2;pointer-events:none}
+    .marquee-container::before{left:0;background:linear-gradient(to right,var(--black),transparent)}
+    .marquee-container::after{right:0;background:linear-gradient(to left,var(--black),transparent)}
+    .marquee-track{display:flex;gap:1rem;animation:marquee 45s linear infinite;width:max-content}
+    .marquee-track:hover{animation-play-state:paused}
+    @keyframes marquee{to{transform:translateX(-50%)}}
+    .review-card{background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:var(--r-lg);padding:1.75rem;width:360px;flex-shrink:0;display:flex;flex-direction:column;gap:0.85rem;transition:all 0.3s cubic-bezier(0.4,0,0.2,1);backdrop-filter:blur(4px)}
+    .review-card:hover{transform:translateY(-4px);background:rgba(255,255,255,0.07);border-color:rgba(255,255,255,0.15)}
+    .review-stars{display:flex;gap:2px}
+    .review-stars svg{width:16px;height:16px;fill:var(--star)}
+    .review-text{font-size:0.92rem;line-height:1.7;color:rgba(255,255,255,0.7);flex-grow:1}
+    .review-author{font-size:0.85rem;font-weight:700;color:#fff;font-family:'Outfit',system-ui,sans-serif}
+    .review-location{font-size:0.78rem;color:rgba(255,255,255,0.35)}
 
     /* ===== ABOUT ===== */
-    .about-grid {
-      display: grid;
-      grid-template-columns: 1fr 1.3fr;
-      gap: 3rem;
-      align-items: center;
-    }
-    .about-img {
-      border-radius: var(--radius);
-      overflow: hidden;
-      box-shadow: var(--shadow-lg);
-    }
-    .about-img img { width: 100%; height: auto; object-fit: cover; aspect-ratio: 3/4; }
-    .about-content h2 { margin-bottom: 1rem; }
-    .about-content p { margin-bottom: 1rem; line-height: 1.75; }
-    .about-content p:last-of-type { margin-bottom: 1.5rem; }
+    .about-section{padding:7rem 0;position:relative;overflow:hidden}
+    .about-section .blob-1{width:350px;height:350px;background:var(--cyan);opacity:0.1;top:-50px;left:-100px}
+    .about-grid{max-width:var(--max);margin:0 auto;padding:0 1.5rem;display:grid;grid-template-columns:0.85fr 1.15fr;gap:5rem;align-items:center;position:relative;z-index:1}
+    .about-img-wrapper{position:relative}
+    .about-img-wrapper::before{content:'';position:absolute;top:-12px;left:-12px;right:12px;bottom:12px;border-radius:var(--r-xl);border:2px solid var(--blue);opacity:0.2;z-index:0}
+    .about-img-wrapper::after{content:'';position:absolute;top:30%;right:-20px;width:40px;height:40px;background:var(--cyan);border-radius:var(--r-sm);transform:rotate(45deg);z-index:2}
+    .about-img-wrapper img{position:relative;z-index:1;width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:var(--r-xl);box-shadow:var(--shadow-xl)}
+    .about-content .label{margin-bottom:1rem}
+    .about-content h2{margin-bottom:1.25rem}
+    .about-content p{margin-bottom:1rem;line-height:1.8}
+    .about-content p:last-of-type{margin-bottom:1.75rem}
+    /* Quote highlight */
+    .about-quote{background:var(--black);color:rgba(255,255,255,0.85);padding:1.5rem 1.75rem;border-radius:var(--r-lg);margin:1.75rem 0;font-size:0.95rem;line-height:1.7;font-style:italic;position:relative}
+    .about-quote::before{content:'\201C';position:absolute;top:-8px;left:16px;font-size:3rem;color:var(--cyan);font-style:normal;line-height:1;font-family:Georgia,serif}
 
-    /* ===== AREAS ===== */
-    .areas-section { background: var(--black); color: #fff; position: relative; overflow: hidden; }
-    .areas-section::before {
-      content: '';
-      position: absolute;
-      top: -100px;
-      right: -100px;
-      width: 400px;
-      height: 400px;
-      background: var(--blue);
-      opacity: 0.1;
-      border-radius: 50%;
-      filter: blur(80px);
-    }
-    .areas-section .section-label { color: var(--cyan); }
-    .areas-section .section-header p { color: rgba(255,255,255,0.65); }
-    .areas-tags {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 0.75rem;
-      max-width: 800px;
-      margin: 0 auto;
-    }
-    .area-tag {
-      background: rgba(255,255,255,0.08);
-      border: 1px solid rgba(255,255,255,0.15);
-      padding: 0.6rem 1.25rem;
-      border-radius: 50px;
-      font-size: 0.9rem;
-      font-weight: 500;
-      color: rgba(255,255,255,0.9);
-      transition: all 0.2s ease;
-    }
-    .area-tag:hover { background: var(--blue); border-color: var(--blue); color: #fff; }
+    /* ===== SERVICE AREAS ===== */
+    .areas-section{padding:5rem 0 6rem;background:var(--g50);color:var(--black);position:relative;overflow:hidden}
+    .areas-section::before{content:'';position:absolute;top:-200px;right:-200px;width:600px;height:600px;background:radial-gradient(circle,var(--blue) 0%,transparent 70%);opacity:0.04}
+    .areas-section::after{content:'';position:absolute;bottom:-200px;left:-200px;width:500px;height:500px;background:radial-gradient(circle,var(--cyan) 0%,transparent 70%);opacity:0.04}
+    .areas-header{text-align:center;margin-bottom:2.5rem;position:relative;z-index:1}
+    .areas-header .label{color:var(--blue);background:var(--blue-light);border-color:rgba(26,107,255,0.1)}
+    .areas-header h2{color:var(--black)}
+    .areas-header p{color:var(--g600);max-width:480px;margin:0.75rem auto 0}
+    .areas-tags{display:flex;flex-wrap:wrap;justify-content:center;gap:0.6rem;max-width:800px;margin:0 auto;position:relative;z-index:1}
+    .area-tag{background:var(--white);border:1px solid var(--g200);padding:0.65rem 1.35rem;border-radius:var(--r);font-size:0.88rem;font-weight:600;font-family:'Outfit',system-ui,sans-serif;color:var(--g800);transition:all 0.3s cubic-bezier(0.4,0,0.2,1);box-shadow:0 2px 8px rgba(0,0,0,0.03)}
+    .area-tag:hover{background:var(--blue);border-color:var(--blue);color:#fff;transform:translateY(-3px);box-shadow:0 8px 24px rgba(26,107,255,0.25)}
 
     /* ===== FAQ ===== */
-    .faq-list { max-width: 760px; margin: 0 auto; }
-    .faq-item {
-      border-bottom: 1px solid var(--gray-200);
-    }
-    .faq-question {
-      width: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 1.25rem 0;
-      background: none;
-      border: none;
-      cursor: pointer;
-      font-family: inherit;
-      font-size: 1.05rem;
-      font-weight: 600;
-      color: var(--black);
-      text-align: left;
-      gap: 1rem;
-    }
-    .faq-question:hover { color: var(--blue); }
-    .faq-icon {
-      width: 24px;
-      height: 24px;
-      flex-shrink: 0;
-      transition: transform 0.3s ease;
-      color: var(--blue);
-    }
-    .faq-item.active .faq-icon { transform: rotate(45deg); }
-    .faq-answer {
-      max-height: 0;
-      overflow: hidden;
-      transition: max-height 0.3s ease;
-    }
-    .faq-answer p {
-      padding-bottom: 1.25rem;
-      line-height: 1.7;
-      font-size: 0.95rem;
-    }
+    .faq-section{padding:6rem 0;background:var(--white);position:relative}
+    .faq-inner{max-width:var(--max);margin:0 auto;padding:0 1.5rem;display:grid;grid-template-columns:0.4fr 0.6fr;gap:5rem;align-items:start}
+    .faq-left{position:sticky;top:calc(var(--hdr) + 2rem)}
+    .faq-left h2{margin-bottom:1rem}
+    .faq-left p{line-height:1.7;margin-bottom:1.5rem}
+    .faq-list{display:flex;flex-direction:column;gap:0.5rem}
+    .faq-item{border:1px solid var(--g100);border-radius:var(--r);position:relative;overflow:hidden;transition:all 0.3s}
+    .faq-item:hover{border-color:var(--g200)}
+    .faq-item.active{border-color:rgba(26,107,255,0.2);background:var(--blue-light)}
+    .faq-question{width:100%;display:flex;align-items:center;justify-content:space-between;padding:1.15rem 1.25rem;background:none;border:none;cursor:pointer;font-family:'Outfit',system-ui,sans-serif;font-size:0.95rem;font-weight:600;color:var(--black);text-align:left;gap:1rem;transition:color 0.2s}
+    .faq-question:hover{color:var(--blue)}
+    .faq-icon{width:20px;height:20px;flex-shrink:0;transition:transform 0.35s cubic-bezier(0.4,0,0.2,1);color:var(--blue)}
+    .faq-item.active .faq-icon{transform:rotate(45deg)}
+    .faq-answer{max-height:0;overflow:hidden;transition:max-height 0.4s cubic-bezier(0.4,0,0.2,1)}
+    .faq-answer p{padding:0 1.25rem 1.15rem;line-height:1.75;font-size:0.92rem}
 
-    /* ===== CTA SECTION ===== */
-    .cta-section {
-      background: var(--blue);
-      color: #fff;
-      text-align: center;
-      position: relative;
-      overflow: hidden;
-    }
-    .cta-section::before {
-      content: '';
-      position: absolute;
-      bottom: -150px;
-      left: -150px;
-      width: 400px;
-      height: 400px;
-      background: rgba(255,255,255,0.08);
-      border-radius: 50%;
-      filter: blur(60px);
-    }
-    .cta-section h2 { color: #fff; margin-bottom: 1rem; }
-    .cta-section p { color: rgba(255,255,255,0.85); max-width: 580px; margin: 0 auto 2rem; font-size: 1.1rem; }
+    /* ===== CTA ===== */
+    .cta-section{padding:6rem 0;background:var(--blue);color:#fff;text-align:center;position:relative;overflow:hidden}
+    .cta-section::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 70% 60% at 30% 20%,rgba(108,255,200,0.12),transparent),radial-gradient(ellipse 50% 50% at 80% 80%,rgba(255,255,255,0.05),transparent)}
+    .cta-section::after{content:'';position:absolute;top:-50%;left:-10%;width:120%;height:200%;background:repeating-linear-gradient(45deg,transparent,transparent 40px,rgba(255,255,255,0.02) 40px,rgba(255,255,255,0.02) 80px);pointer-events:none}
+    .cta-inner{position:relative;z-index:1}
+    .cta-section h2{color:#fff;margin-bottom:1rem}
+    .cta-section .highlight::after{background:linear-gradient(135deg,var(--cyan),rgba(108,255,200,0.3))}
+    .cta-section p{color:rgba(255,255,255,0.8);max-width:520px;margin:0 auto 2.5rem;font-size:1.08rem;line-height:1.7}
 
     /* ===== FOOTER ===== */
-    .footer {
-      background: var(--black);
-      color: rgba(255,255,255,0.7);
-      padding: 3rem 0 1.5rem;
-    }
-    .footer-inner {
-      max-width: var(--max-width);
-      margin: 0 auto;
-      padding: 0 1.5rem;
-      display: grid;
-      grid-template-columns: 1.5fr 1fr 1fr;
-      gap: 3rem;
-    }
-    .footer-brand img { height: 52px; margin-bottom: 1rem; filter: brightness(0) invert(1); }
-    .footer-brand p { font-size: 0.88rem; line-height: 1.6; max-width: 340px; }
-    .footer h4 { color: #fff; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 1rem; }
-    .footer ul li { margin-bottom: 0.5rem; }
-    .footer ul li a { font-size: 0.88rem; transition: color 0.2s; }
-    .footer ul li a:hover { color: var(--blue); }
-    .footer-bottom {
-      max-width: var(--max-width);
-      margin: 2rem auto 0;
-      padding: 1.5rem 1.5rem 0;
-      border-top: 1px solid rgba(255,255,255,0.1);
-      font-size: 0.8rem;
-      text-align: center;
-    }
+    .footer{background:var(--black);color:rgba(255,255,255,0.5);padding:4rem 0 1.5rem}
+    .footer-inner{max-width:var(--max);margin:0 auto;padding:0 1.5rem;display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:3rem}
+    .footer-brand img{height:48px;margin-bottom:1rem;filter:brightness(0) invert(1)}
+    .footer-brand p{font-size:0.85rem;line-height:1.65;max-width:320px}
+    .footer h4{color:#fff;font-size:0.72rem;font-family:'Outfit',system-ui,sans-serif;text-transform:uppercase;letter-spacing:0.14em;margin-bottom:1rem}
+    .footer ul li{margin-bottom:0.5rem}
+    .footer ul li a{font-size:0.85rem;transition:color 0.25s}
+    .footer ul li a:hover{color:var(--cyan)}
+    .footer-bottom{max-width:var(--max);margin:2.5rem auto 0;padding:1.25rem 1.5rem 0;border-top:1px solid rgba(255,255,255,0.06);font-size:0.75rem;text-align:center}
 
     /* ===== MOBILE CTA BAR ===== */
-    .mobile-cta-bar {
-      display: none;
-      position: fixed;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      z-index: 998;
-      background: var(--white);
-      padding: 10px 16px;
-      box-shadow: 0 -2px 12px rgba(0,0,0,0.1);
-      border-top: 1px solid var(--gray-200);
-    }
-    .mobile-cta-bar a {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 0.5rem;
-      width: 100%;
-      min-height: 48px;
-      background: var(--blue);
-      color: #fff;
-      border-radius: var(--radius-sm);
-      font-weight: 700;
-      font-size: 1rem;
-    }
-    .mobile-cta-bar svg { width: 20px; height: 20px; }
+    .mobile-cta-bar{display:none;position:fixed;bottom:0;left:0;right:0;z-index:998;background:var(--white);padding:10px 16px;box-shadow:0 -4px 24px rgba(0,0,0,0.1);border-top:1px solid var(--g100)}
+    .mobile-cta-bar a{display:flex;align-items:center;justify-content:center;gap:0.5rem;width:100%;min-height:52px;background:var(--blue);color:#fff;border-radius:var(--r);font-weight:700;font-family:'Outfit',system-ui,sans-serif;font-size:1rem;box-shadow:0 4px 20px rgba(26,107,255,0.35)}
+    .mobile-cta-bar svg{width:18px;height:18px}
 
-    /* ===== SCROLL ANIMATIONS ===== */
-    .reveal {
-      opacity: 0;
-      transform: translateY(24px);
-      transition: opacity 0.6s ease, transform 0.6s ease;
-    }
-    .reveal.visible {
-      opacity: 1;
-      transform: translateY(0);
-    }
-    .reveal-delay-1 { transition-delay: 0.1s; }
-    .reveal-delay-2 { transition-delay: 0.2s; }
-    .reveal-delay-3 { transition-delay: 0.3s; }
+    /* ===== ANIMATIONS ===== */
+    .reveal{opacity:0;transform:translateY(32px);transition:opacity 0.8s cubic-bezier(0.4,0,0.2,1),transform 0.8s cubic-bezier(0.4,0,0.2,1)}
+    .reveal.visible{opacity:1;transform:translateY(0)}
+    .reveal-d1{transition-delay:0.1s}.reveal-d2{transition-delay:0.2s}.reveal-d3{transition-delay:0.3s}.reveal-d4{transition-delay:0.4s}
 
     /* ===== RESPONSIVE ===== */
-    @media (max-width: 1024px) {
-      .hero-inner { grid-template-columns: 1fr; text-align: center; }
-      .hero-content { max-width: 100%; margin: 0 auto; }
-      .hero-buttons { justify-content: center; }
-      .hero-trust { justify-content: center; }
-      .hero-videos { max-height: 400px; max-width: 400px; margin: 0 auto; }
-      .video-col iframe { min-height: 360px; }
-      .steps-grid { grid-template-columns: repeat(2, 1fr); }
-      .steps-grid::before { display: none; }
-      .about-grid { grid-template-columns: 1fr; text-align: center; }
-      .about-img { max-width: 360px; margin: 0 auto; }
-      .footer-inner { grid-template-columns: 1fr; text-align: center; }
-      .footer-brand p { margin: 0 auto; }
+    @media(max-width:1024px){
+      .hero-inner{grid-template-columns:1fr;text-align:center}
+      .hero-content{max-width:100%;margin:0 auto}
+      .hero-buttons,.hero-badges{justify-content:center}
+      .hero-videos{max-height:380px;max-width:380px;margin:0 auto}
+      .video-col iframe{min-height:340px}
+      .services-layout{grid-template-columns:1fr}
+      .service-card-featured{grid-column:span 1;grid-template-columns:1fr}
+      .service-card-featured .service-card-img{min-height:200px}
+      .process-steps-row{grid-template-columns:repeat(2,1fr);gap:2rem}
+      .process-steps-row::before{display:none}
+      .about-grid{grid-template-columns:1fr;text-align:center}
+      .about-img-wrapper{max-width:340px;margin:0 auto}
+      .about-img-wrapper::after{display:none}
+      .faq-inner{grid-template-columns:1fr}
+      .faq-left{position:static;text-align:center}
+      .footer-inner{grid-template-columns:1fr;text-align:center}
+      .footer-brand{display:flex;flex-direction:column;align-items:center}
+      .footer-brand p{margin:0 auto}
+      .trust-bar-inner{grid-template-columns:repeat(2,1fr)}
     }
-
-    @media (max-width: 768px) {
-      :root { --header-h: 60px; }
-      .section { padding: 3.5rem 0; }
-      .header-nav { display: none; }
-      .header-phone { display: none; }
-      .hamburger { display: flex; }
-      .mobile-cta-bar { display: block; }
-      body { padding-bottom: 68px; }
-      .hero { padding-top: calc(var(--header-h) + 2rem); }
-      .hero-videos { max-height: 320px; max-width: 320px; }
-      .video-col iframe { min-height: 280px; }
-      .services-grid { grid-template-columns: 1fr; }
-      .steps-grid { grid-template-columns: 1fr; gap: 1.5rem; }
-      .gallery-grid { grid-template-columns: repeat(2, 1fr); gap: 0.5rem; }
-      .reviews-grid { grid-template-columns: 1fr; }
-      .section-header { text-align: center; }
-      .section-header h2 { text-align: center; }
-      .section-header p { text-align: center; }
-      .about-content { text-align: left; }
-      .about-content h2, .about-content .section-label { text-align: center; }
-      .btn { width: 100%; padding: 16px 24px; }
-      .hero-buttons .btn { width: auto; }
-      .areas-tags { gap: 0.5rem; }
-      .area-tag { font-size: 0.82rem; padding: 0.5rem 1rem; }
+    @media(max-width:768px){
+      :root{--hdr:60px}
+      .header-nav,.header-phone{display:none}
+      .hamburger{display:flex}
+      .mobile-cta-bar{display:block}
+      body{padding-bottom:70px}
+      .hero{padding-top:calc(var(--hdr) + 2rem);min-height:auto}
+      .hero-videos{max-height:300px;max-width:300px}
+      .video-col iframe{min-height:260px}
+      .gallery-masonry{columns:2;column-gap:0.5rem}
+      .gallery-item{margin-bottom:0.5rem}
+      .about-content{text-align:left}
+      .about-content h2,.about-content .label{text-align:center}
+      .about-quote{text-align:left}
+      .btn{width:100%;padding:16px 24px}
+      .hero-buttons .btn{width:auto}
+      .areas-tags{gap:0.4rem}
+      .area-tag{font-size:0.82rem;padding:0.5rem 1rem}
+      .review-card{width:300px;padding:1.5rem}
+      .trust-bar-inner{grid-template-columns:repeat(2,1fr)}
+      .trust-item{font-size:0.75rem;padding:0.8rem 0.5rem}
+      .process-steps-row{grid-template-columns:1fr 1fr;gap:1.5rem}
     }
-
-    @media (max-width: 480px) {
-      .hero-videos { max-height: 260px; max-width: 260px; }
-      .video-col iframe { min-height: 220px; }
-      .gallery-grid { grid-template-columns: repeat(2, 1fr); }
+    @media(max-width:480px){
+      .hero-videos{max-height:240px;max-width:240px}
+      .video-col iframe{min-height:200px}
+      .gallery-masonry{columns:2}
+      .trust-bar-inner{grid-template-columns:1fr 1fr}
     }
   </style>
 </head>
 <body>
 
-  <!-- ===== HEADER ===== -->
+  <!-- HEADER -->
   <header class="header" id="header">
     <div class="header-inner">
       <a href="#" class="header-logo">
@@ -787,573 +368,383 @@
       </nav>
       <div class="header-cta">
         <a href="tel:01234567890" class="header-phone">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
           01234 567 890
         </a>
-        <a href="tel:01234567890" class="btn btn-primary" style="padding: 10px 22px; font-size: 0.88rem;">Get Free Quote</a>
+        <a href="tel:01234567890" class="btn btn-primary" style="padding:10px 22px;font-size:0.82rem;min-height:40px">Get Free Quote</a>
       </div>
-      <button class="hamburger" id="hamburger" aria-label="Menu">
-        <span></span><span></span><span></span>
-      </button>
+      <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
     </div>
   </header>
-
-  <!-- Mobile menu -->
   <div class="mobile-menu" id="mobileMenu">
     <a href="#services" onclick="closeMenu()">Services</a>
     <a href="#gallery" onclick="closeMenu()">Gallery</a>
     <a href="#reviews" onclick="closeMenu()">Reviews</a>
     <a href="#about" onclick="closeMenu()">About</a>
     <a href="#faq" onclick="closeMenu()">FAQ</a>
-    <a href="tel:01234567890" class="btn btn-primary" onclick="closeMenu()">Call 01234 567 890</a>
+    <a href="tel:01234567890" class="btn btn-primary" onclick="closeMenu()" style="width:auto">Call 01234 567 890</a>
   </div>
 
-  <!-- ===== HERO ===== -->
+  <!-- HERO -->
   <section class="hero">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
     <div class="hero-inner">
       <div class="hero-content reveal">
-        <h1>Your Home, <span>Transformed.</span></h1>
-        <p>Window cleaning, pressure washing, gutters, roofs, and driveways across Barry, Cardiff, and the Vale of Glamorgan. Done right, on time, every single time.</p>
+        <span class="label">Barry, Cardiff &amp; The Vale</span>
+        <h1>Your Home, <span class="highlight">Transformed.</span></h1>
+        <p>Windows, driveways, gutters, roofs — we make them look like the day they were fitted. Done right, on time, every single time. No chasing, no excuses, no messing about.</p>
         <div class="hero-buttons">
           <a href="tel:01234567890" class="btn btn-primary">
-            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
             Call for a Free Quote
           </a>
           <a href="#gallery" class="btn btn-outline">See Our Work</a>
         </div>
-        <div class="hero-trust">
-          <div class="hero-trust-item">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="var(--blue)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+        <div class="hero-badges">
+          <div class="hero-badge">
+            <svg viewBox="0 0 24 24" fill="none" stroke="var(--blue)" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
             Fully Insured
           </div>
-          <div class="hero-trust-item">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="var(--star)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+          <div class="hero-badge">
+            <svg viewBox="0 0 24 24" fill="none" stroke="var(--star)" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
             5-Star Rated
           </div>
-          <div class="hero-trust-item">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="var(--blue)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
-            Local &amp; Trusted
+          <div class="hero-badge">
+            <svg viewBox="0 0 24 24" fill="none" stroke="var(--blue)" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            Satisfaction Guaranteed
           </div>
         </div>
       </div>
-      <div class="hero-videos reveal reveal-delay-2">
+      <div class="hero-videos reveal reveal-d2">
         <div class="video-col">
           <span class="video-label">Before</span>
-          <iframe
-            id="video-before"
-            src="https://customer-kngdsbkxxxbb5ynm.cloudflarestream.com/96fdf0d4baeb91730ed417d2e0a0059b/iframe?autoplay=true&muted=true&controls=false&loop=false&preload=true&poster=https%3A%2F%2Fcustomer-kngdsbkxxxbb5ynm.cloudflarestream.com%2F96fdf0d4baeb91730ed417d2e0a0059b%2Fthumbnails%2Fthumbnail.jpg%3Ftime%3D%26height%3D600"
-            loading="eager"
-            allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture;"
-            allowfullscreen="true"
-          ></iframe>
+          <iframe id="video-before" src="https://customer-kngdsbkxxxbb5ynm.cloudflarestream.com/96fdf0d4baeb91730ed417d2e0a0059b/iframe?autoplay=true&muted=true&controls=false&loop=false&preload=true&poster=https%3A%2F%2Fcustomer-kngdsbkxxxbb5ynm.cloudflarestream.com%2F96fdf0d4baeb91730ed417d2e0a0059b%2Fthumbnails%2Fthumbnail.jpg%3Ftime%3D%26height%3D600" loading="eager" allow="accelerometer;gyroscope;autoplay;encrypted-media;picture-in-picture" allowfullscreen></iframe>
         </div>
         <div class="video-col">
           <span class="video-label">After</span>
-          <iframe
-            id="video-after"
-            src="https://customer-kngdsbkxxxbb5ynm.cloudflarestream.com/c9bb6c31fd7ebf3fc2462c548c2c18f1/iframe?autoplay=true&muted=true&controls=false&loop=false&preload=true&poster=https%3A%2F%2Fcustomer-kngdsbkxxxbb5ynm.cloudflarestream.com%2Fc9bb6c31fd7ebf3fc2462c548c2c18f1%2Fthumbnails%2Fthumbnail.jpg%3Ftime%3D%26height%3D600"
-            loading="eager"
-            allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture;"
-            allowfullscreen="true"
-          ></iframe>
+          <iframe id="video-after" src="https://customer-kngdsbkxxxbb5ynm.cloudflarestream.com/c9bb6c31fd7ebf3fc2462c548c2c18f1/iframe?autoplay=true&muted=true&controls=false&loop=false&preload=true&poster=https%3A%2F%2Fcustomer-kngdsbkxxxbb5ynm.cloudflarestream.com%2Fc9bb6c31fd7ebf3fc2462c548c2c18f1%2Fthumbnails%2Fthumbnail.jpg%3Ftime%3D%26height%3D600" loading="eager" allow="accelerometer;gyroscope;autoplay;encrypted-media;picture-in-picture" allowfullscreen></iframe>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ===== TRUST BAR ===== -->
+  <!-- WAVE: Hero → Trust -->
+  <div class="wave" style="margin-top:-1px;background:var(--black)">
+    <svg viewBox="0 0 1440 80" preserveAspectRatio="none"><path d="M0,40 C360,80 720,0 1440,40 L1440,80 L0,80 Z" fill="#fff"/></svg>
+  </div>
+
+  <!-- TRUST BAR -->
   <div class="trust-bar">
     <div class="trust-bar-inner">
-      <div class="trust-item">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
-        Fully Insured
-      </div>
-      <div class="trust-item">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
-        Reliable &amp; On Time
-      </div>
-      <div class="trust-item">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
-        Satisfaction Guaranteed
-      </div>
-      <div class="trust-item">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-        Serving Barry &amp; Cardiff
-      </div>
+      <div class="trust-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>Fully Insured</div>
+      <div class="trust-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>Reliable &amp; On Time</div>
+      <div class="trust-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>Satisfaction Guaranteed</div>
+      <div class="trust-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Serving Barry &amp; Cardiff</div>
     </div>
   </div>
 
-  <!-- ===== SERVICES ===== -->
-  <section class="section" id="services">
+  <!-- SERVICES -->
+  <section class="services-section" id="services">
+    <div class="blob blob-1"></div>
     <div class="container">
-      <div class="section-header reveal">
-        <span class="section-label">What We Do</span>
-        <h2>Every Surface, Spotless</h2>
+      <div class="services-header reveal">
+        <span class="label">What We Do</span>
+        <h2>Every Surface, <span class="highlight">Spotless</span></h2>
         <p>Whether it's streaky windows driving you mad, a driveway that's turned into a slip hazard, or gutters overflowing every time it rains — we sort it. Properly.</p>
       </div>
-      <div class="services-grid">
-        <div class="service-card reveal">
+      <div class="services-layout">
+        <!-- Featured card -->
+        <div class="service-card service-card-featured reveal">
           <div class="service-card-img">
             <img src="https://4p4uvw3d9w.ufs.sh/f/GjfEcLvWS9LJr0GAQUFBN2rQxEdLJ0fbephDTgzFIyt6qXiU" alt="Window cleaning in Barry" loading="lazy">
           </div>
           <div class="service-card-body">
-            <h3>Window Cleaning</h3>
-            <p>Crystal-clear windows that actually let the light in. We use purified water-fed pole systems for a streak-free finish that lasts, covering every window, frame, and sill — inside and out.</p>
+            <h3><span class="icon-dot"></span> Window Cleaning</h3>
+            <p>Crystal-clear windows that actually let the light in. We use purified water-fed pole systems for a streak-free finish that lasts, covering every window, frame, and sill — inside and out. The kind of clean where you walk into the room and genuinely notice the difference in how bright everything feels.</p>
           </div>
         </div>
-        <div class="service-card reveal reveal-delay-1">
+        <!-- Regular cards -->
+        <div class="service-card reveal reveal-d1">
           <div class="service-card-img">
-            <img src="https://4p4uvw3d9w.ufs.sh/f/GjfEcLvWS9LJc4MweHma7c1qDS83ZVIXQxiYGRfCOldtMEJr" alt="Pressure washing services" loading="lazy">
+            <img src="https://4p4uvw3d9w.ufs.sh/f/GjfEcLvWS9LJc4MweHma7c1qDS83ZVIXQxiYGRfCOldtMEJr" alt="Pressure washing" loading="lazy">
           </div>
           <div class="service-card-body">
-            <h3>Pressure Washing</h3>
-            <p>Driveways, patios, paths, decking — we strip away years of grime, moss, and algae. The difference is night and day. No surface damage, no mess left behind, and your neighbours will definitely notice.</p>
+            <h3><span class="icon-dot"></span> Pressure Washing</h3>
+            <p>Driveways, patios, paths, decking — we strip away years of grime, moss, and algae. The difference is night and day. No surface damage, no mess left behind.</p>
           </div>
         </div>
-        <div class="service-card reveal reveal-delay-2">
+        <div class="service-card reveal reveal-d2">
           <div class="service-card-img">
-            <img src="https://4p4uvw3d9w.ufs.sh/f/GjfEcLvWS9LJGXgbLpvWS9LJtFgwX3Yu4IdoHVyOm8bGskfj" alt="Gutter cleaning services" loading="lazy">
+            <img src="https://4p4uvw3d9w.ufs.sh/f/GjfEcLvWS9LJGXgbLpvWS9LJtFgwX3Yu4IdoHVyOm8bGskfj" alt="Gutter cleaning" loading="lazy">
           </div>
           <div class="service-card-body">
-            <h3>Gutter Cleaning</h3>
-            <p>Blocked gutters cause real damage — overflowing water saturates your walls, breeds mould, and can cost thousands in repairs. We clear them out completely so water flows where it should.</p>
+            <h3><span class="icon-dot"></span> Gutter Cleaning</h3>
+            <p>Blocked gutters cause real damage — overflowing water saturates walls, breeds mould, and costs thousands to fix. We clear them out completely.</p>
           </div>
         </div>
-        <div class="service-card reveal">
+        <div class="service-card reveal reveal-d1">
           <div class="service-card-img">
             <img src="https://4p4uvw3d9w.ufs.sh/f/GjfEcLvWS9LJ2ZtTQXHQrLdSPChU1veK37iBGDuf8q62wsjA" alt="Roof cleaning Barry" loading="lazy">
           </div>
           <div class="service-card-body">
-            <h3>Roof Cleaning</h3>
-            <p>Moss doesn't just look bad — it damages your tiles and shortens your roof's lifespan. We remove it safely, treat the surface to slow regrowth, and leave your roof looking years younger.</p>
+            <h3><span class="icon-dot"></span> Roof Cleaning</h3>
+            <p>Moss damages tiles and shortens your roof's lifespan. We remove it safely, treat the surface to slow regrowth, and leave it looking years younger.</p>
           </div>
         </div>
-        <div class="service-card reveal reveal-delay-1">
+        <div class="service-card reveal reveal-d2">
           <div class="service-card-img">
-            <img src="https://4p4uvw3d9w.ufs.sh/f/GjfEcLvWS9LJA9j9EBzW80gz3BfukbiCAQYsjwrFXTHhDnPp" alt="Driveway cleaning services" loading="lazy">
+            <img src="https://4p4uvw3d9w.ufs.sh/f/GjfEcLvWS9LJA9j9EBzW80gz3BfukbiCAQYsjwrFXTHhDnPp" alt="Driveway cleaning" loading="lazy">
           </div>
           <div class="service-card-body">
-            <h3>Driveway Cleaning</h3>
-            <p>That green, slippery mess covering your driveway? Gone. We'll have it looking like the day it was laid. No harsh chemicals wrecking your plants, no puddles left everywhere — just a clean, safe surface you're proud of.</p>
+            <h3><span class="icon-dot"></span> Driveway Cleaning</h3>
+            <p>That green, slippery mess covering your driveway? Gone. We'll have it looking like the day it was laid. No harsh chemicals, no puddles — just clean.</p>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ===== HOW IT WORKS ===== -->
-  <section class="section section-alt" id="process">
+  <!-- WAVE: Services → Process -->
+  <div class="wave" style="background:var(--white)"><svg viewBox="0 0 1440 80" preserveAspectRatio="none"><path d="M0,20 C480,80 960,0 1440,50 L1440,80 L0,80 Z" fill="var(--g50)"/></svg></div>
+
+  <!-- HOW IT WORKS -->
+  <section class="process-section" id="process">
     <div class="container">
-      <div class="section-header reveal">
-        <span class="section-label">How It Works</span>
-        <h2>Simple as 1, 2, 3, 4</h2>
-        <p>No chasing, no guessing, no nonsense. Here's exactly what happens when you get in touch.</p>
+      <div class="process-header reveal">
+        <span class="label">How It Works</span>
+        <h2>Ridiculously Simple</h2>
+        <p>No chasing, no guessing, no nonsense. Here's exactly what happens.</p>
       </div>
-      <div class="steps-grid">
-        <div class="step reveal">
+      <div class="process-steps-row">
+        <div class="process-step-card reveal">
           <div class="step-number">1</div>
-          <h3>Give Us a Call</h3>
-          <p>Tell us what needs doing. We'll give you an honest quote — no pressure, no obligation, no hard sell.</p>
+          <div class="step-visual">
+            <img src="https://4p4uvw3d9w.ufs.sh/f/GjfEcLvWS9LJm4tFzoEkgFba8pqtU9wXV4SDv7hPo3xzYuWs" alt="Call us" loading="lazy">
+          </div>
+          <div class="step-content">
+            <h3>Give Us a Call</h3>
+            <p>Tell us what needs doing. Honest quote, no pressure, no obligation.</p>
+          </div>
         </div>
-        <div class="step reveal reveal-delay-1">
+        <div class="process-step-card reveal reveal-d1">
           <div class="step-number">2</div>
-          <h3>We Book You In</h3>
-          <p>Pick a day that works. We text you the day before to confirm. And yes, we actually show up. Revolutionary, we know.</p>
+          <div class="step-visual">
+            <img src="https://4p4uvw3d9w.ufs.sh/f/GjfEcLvWS9LJkoXP3GlE0lJBDHoyKRvr9LptgfUa5q4eIA2n" alt="Booking" loading="lazy">
+          </div>
+          <div class="step-content">
+            <h3>We Book You In</h3>
+            <p>Pick a day that works. We text you to confirm. And yes, we actually show up.</p>
+          </div>
         </div>
-        <div class="step reveal reveal-delay-2">
+        <div class="process-step-card reveal reveal-d2">
           <div class="step-number">3</div>
-          <h3>We Get to Work</h3>
-          <p>Our team arrives, does a thorough job from top to bottom, and leaves your property looking spotless. No mess, no shortcuts.</p>
+          <div class="step-visual">
+            <img src="https://4p4uvw3d9w.ufs.sh/f/GjfEcLvWS9LJ5lqzg2782gBaiH7fqEnsS3DkeZ6TK1JudjpN" alt="Working" loading="lazy">
+          </div>
+          <div class="step-content">
+            <h3>We Get to Work</h3>
+            <p>Our team arrives, does a thorough job, and leaves your property spotless. No mess, no shortcuts.</p>
+          </div>
         </div>
-        <div class="step reveal reveal-delay-3">
+        <div class="process-step-card reveal reveal-d3">
           <div class="step-number">4</div>
-          <h3>You Enjoy the Results</h3>
-          <p>Sit back and admire. Not happy with something? We come back and make it right. That's our guarantee.</p>
+          <div class="step-visual">
+            <img src="https://4p4uvw3d9w.ufs.sh/f/GjfEcLvWS9LJ7bkrfWcTIOkq29UedDfAsalv0EVj5Y67xuPM" alt="Results" loading="lazy">
+          </div>
+          <div class="step-content">
+            <h3>Enjoy the Results</h3>
+            <p>Sit back and admire. Not happy? We come back and make it right. That's our guarantee.</p>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ===== GALLERY ===== -->
-  <section class="section" id="gallery">
-    <div class="container">
-      <div class="section-header reveal">
-        <span class="section-label">Our Work</span>
-        <h2>See the Difference for Yourself</h2>
-        <p>Real results from real homes across Barry, Cardiff, and the Vale. Every photo is our actual work — no stock images, no filters, just genuine transformations.</p>
-      </div>
+  <!-- WAVE: Process → Gallery -->
+  <div class="wave" style="background:var(--g50)"><svg viewBox="0 0 1440 80" preserveAspectRatio="none"><path d="M0,50 C360,0 1080,80 1440,20 L1440,80 L0,80 Z" fill="#fff"/></svg></div>
 
-      <!-- Main gallery grid -->
-      <div class="gallery-grid" id="galleryMain">
-        <!-- Row 1: Work + B&A mix -->
-        <div class="gallery-item" onclick="openLightbox(0)">
-          <img src="https://4p4uvw3d9w.ufs.sh/f/GjfEcLvWS9LJkoXP3GlE0lJBDHoyKRvr9LptgfUa5q4eIA2n" alt="Professional cleaning results" loading="lazy">
-        </div>
-        <div class="gallery-item" onclick="openLightbox(1)">
-          <img src="https://4p4uvw3d9w.ufs.sh/f/GjfEcLvWS9LJBtvzCCfbAa6hJVdgiXxl5M4jEf37ZSTQktNo" alt="Before and after exterior cleaning" loading="lazy">
-          <span class="ba-badge">Before &amp; After</span>
-        </div>
-        <div class="gallery-item" onclick="openLightbox(2)">
-          <img src="https://4p4uvw3d9w.ufs.sh/f/GjfEcLvWS9LJm4tFzoEkgFba8pqtU9wXV4SDv7hPo3xzYuWs" alt="Exterior cleaning work" loading="lazy">
-        </div>
-        <!-- Row 2 -->
-        <div class="gallery-item" onclick="openLightbox(3)">
-          <img src="https://4p4uvw3d9w.ufs.sh/f/GjfEcLvWS9LJaCjKhWiRnzApU9vfZ1HWBKgxkoytXMIQ4bOs" alt="Before and after cleaning transformation" loading="lazy">
-          <span class="ba-badge">Before &amp; After</span>
-        </div>
-        <div class="gallery-item" onclick="openLightbox(4)">
-          <img src="https://4p4uvw3d9w.ufs.sh/f/GjfEcLvWS9LJ7bkrfWcTIOkq29UedDfAsalv0EVj5Y67xuPM" alt="Cleaning service results" loading="lazy">
-        </div>
-        <div class="gallery-item" onclick="openLightbox(5)">
-          <img src="https://4p4uvw3d9w.ufs.sh/f/GjfEcLvWS9LJGHPOnKpvWS9LJtFgwX3Yu4IdoHVyOm8bGskf" alt="Before and after pressure washing" loading="lazy">
-          <span class="ba-badge">Before &amp; After</span>
-        </div>
-        <!-- Row 3 -->
-        <div class="gallery-item" onclick="openLightbox(6)">
-          <img src="https://4p4uvw3d9w.ufs.sh/f/GjfEcLvWS9LJ5lqzg2782gBaiH7fqEnsS3DkeZ6TK1JudjpN" alt="Professional cleaning services" loading="lazy">
-        </div>
-        <div class="gallery-item" onclick="openLightbox(7)">
-          <img src="https://4p4uvw3d9w.ufs.sh/f/GjfEcLvWS9LJrz3SjbBN2rQxEdLJ0fbephDTgzFIyt6qXiUO" alt="Before and after driveway cleaning" loading="lazy">
-          <span class="ba-badge">Before &amp; After</span>
-        </div>
-        <div class="gallery-item" onclick="openLightbox(8)">
-          <img src="https://4p4uvw3d9w.ufs.sh/f/GjfEcLvWS9LJxDJL7KR6ZPeEThtcOU5Hslj8uiWd2RXV3Jfb" alt="Window cleaning results" loading="lazy">
-        </div>
-        <!-- B&A Pair - before and after side by side -->
-        <div class="gallery-item gallery-ba-pair" onclick="openLightbox(9)" style="grid-column: span 2;">
-          <img src="https://4p4uvw3d9w.ufs.sh/f/GjfEcLvWS9LJk99hCjMlE0lJBDHoyKRvr9LptgfUa5q4eIA2" alt="Before cleaning" loading="lazy">
-          <img src="https://4p4uvw3d9w.ufs.sh/f/GjfEcLvWS9LJsZ2qbtPTjW3bSrpqfca6MKu5RkQl8F9mBXwy" alt="After cleaning" loading="lazy">
+  <!-- GALLERY -->
+  <section class="gallery-section" id="gallery">
+    <div class="container">
+      <div class="gallery-header reveal">
+        <span class="label">Our Work</span>
+        <h2>See the Difference <span class="highlight">for Yourself</span></h2>
+        <p>Real results from real homes across Barry, Cardiff, and the Vale. Every photo is our actual work — no stock images, no filters.</p>
+      </div>
+      <div class="gallery-masonry" id="galleryMain">
+        <div class="gallery-item" onclick="openLightbox(0)"><img src="https://4p4uvw3d9w.ufs.sh/f/GjfEcLvWS9LJkoXP3GlE0lJBDHoyKRvr9LptgfUa5q4eIA2n" alt="Cleaning results" loading="lazy"></div>
+        <div class="gallery-item" onclick="openLightbox(1)"><img src="https://4p4uvw3d9w.ufs.sh/f/GjfEcLvWS9LJBtvzCCfbAa6hJVdgiXxl5M4jEf37ZSTQktNo" alt="Before and after" loading="lazy"><span class="ba-badge">Before &amp; After</span></div>
+        <div class="gallery-item" onclick="openLightbox(2)"><img src="https://4p4uvw3d9w.ufs.sh/f/GjfEcLvWS9LJm4tFzoEkgFba8pqtU9wXV4SDv7hPo3xzYuWs" alt="Exterior cleaning" loading="lazy"></div>
+        <div class="gallery-item" onclick="openLightbox(3)"><img src="https://4p4uvw3d9w.ufs.sh/f/GjfEcLvWS9LJaCjKhWiRnzApU9vfZ1HWBKgxkoytXMIQ4bOs" alt="Before and after" loading="lazy"><span class="ba-badge">Before &amp; After</span></div>
+        <div class="gallery-item" onclick="openLightbox(4)"><img src="https://4p4uvw3d9w.ufs.sh/f/GjfEcLvWS9LJ7bkrfWcTIOkq29UedDfAsalv0EVj5Y67xuPM" alt="Cleaning service" loading="lazy"></div>
+        <div class="gallery-item" onclick="openLightbox(5)"><img src="https://4p4uvw3d9w.ufs.sh/f/GjfEcLvWS9LJGHPOnKpvWS9LJtFgwX3Yu4IdoHVyOm8bGskf" alt="Before and after" loading="lazy"><span class="ba-badge">Before &amp; After</span></div>
+        <div class="gallery-item" onclick="openLightbox(6)"><img src="https://4p4uvw3d9w.ufs.sh/f/GjfEcLvWS9LJ5lqzg2782gBaiH7fqEnsS3DkeZ6TK1JudjpN" alt="Professional cleaning" loading="lazy"></div>
+        <div class="gallery-item" onclick="openLightbox(7)"><img src="https://4p4uvw3d9w.ufs.sh/f/GjfEcLvWS9LJrz3SjbBN2rQxEdLJ0fbephDTgzFIyt6qXiUO" alt="Before and after" loading="lazy"><span class="ba-badge">Before &amp; After</span></div>
+        <div class="gallery-item" onclick="openLightbox(8)"><img src="https://4p4uvw3d9w.ufs.sh/f/GjfEcLvWS9LJxDJL7KR6ZPeEThtcOU5Hslj8uiWd2RXV3Jfb" alt="Window cleaning" loading="lazy"></div>
+        <!-- B&A pair -->
+        <div class="gallery-item gallery-ba-pair" onclick="openLightbox(9)">
+          <img src="https://4p4uvw3d9w.ufs.sh/f/GjfEcLvWS9LJk99hCjMlE0lJBDHoyKRvr9LptgfUa5q4eIA2" alt="Before" loading="lazy">
+          <img src="https://4p4uvw3d9w.ufs.sh/f/GjfEcLvWS9LJsZ2qbtPTjW3bSrpqfca6MKu5RkQl8F9mBXwy" alt="After" loading="lazy">
           <span class="ba-badge">Before &amp; After</span>
           <span class="ba-label ba-label-before">Before</span>
           <span class="ba-label ba-label-after">After</span>
         </div>
-        <div class="gallery-item" onclick="openLightbox(10)">
-          <img src="https://4p4uvw3d9w.ufs.sh/f/GjfEcLvWS9LJ5tSjYQ782gBaiH7fqEnsS3DkeZ6TK1JudjpN" alt="Before and after exterior clean" loading="lazy">
-          <span class="ba-badge">Before &amp; After</span>
-        </div>
+        <div class="gallery-item" onclick="openLightbox(10)"><img src="https://4p4uvw3d9w.ufs.sh/f/GjfEcLvWS9LJ5tSjYQ782gBaiH7fqEnsS3DkeZ6TK1JudjpN" alt="Before and after" loading="lazy"><span class="ba-badge">Before &amp; After</span></div>
+        <div class="gallery-item" onclick="openLightbox(11)"><img src="https://4p4uvw3d9w.ufs.sh/f/GjfEcLvWS9LJ5vcJGZ782gBaiH7fqEnsS3DkeZ6TK1JudjpN" alt="Before and after" loading="lazy"><span class="ba-badge">Before &amp; After</span></div>
       </div>
-
-      <!-- Additional images - hidden initially -->
-      <div class="gallery-grid gallery-hidden" id="galleryMore">
-        <div class="gallery-item" onclick="openLightbox(11)">
-          <img src="https://4p4uvw3d9w.ufs.sh/f/GjfEcLvWS9LJ5vcJGZ782gBaiH7fqEnsS3DkeZ6TK1JudjpN" alt="Before and after transformation" loading="lazy">
-          <span class="ba-badge">Before &amp; After</span>
-        </div>
-        <div class="gallery-item" onclick="openLightbox(12)">
-          <img src="https://4p4uvw3d9w.ufs.sh/f/GjfEcLvWS9LJJSSDJmKjMoGpzb79k6EiexgO14jUShuv3QYF" alt="Before and after cleaning result" loading="lazy">
-          <span class="ba-badge">Before &amp; After</span>
-        </div>
-        <div class="gallery-item" onclick="openLightbox(13)">
-          <img src="https://4p4uvw3d9w.ufs.sh/f/GjfEcLvWS9LJGXgbLpvWS9LJtFgwX3Yu4IdoHVyOm8bGskfj" alt="Gutter cleaning work" loading="lazy">
-        </div>
-        <div class="gallery-item" onclick="openLightbox(14)">
-          <img src="https://4p4uvw3d9w.ufs.sh/f/GjfEcLvWS9LJ75PXKzcTIOkq29UedDfAsalv0EVj5Y67xuPM" alt="Before and after roof cleaning" loading="lazy">
-          <span class="ba-badge">Before &amp; After</span>
-        </div>
-        <div class="gallery-item" onclick="openLightbox(15)">
-          <img src="https://4p4uvw3d9w.ufs.sh/f/GjfEcLvWS9LJuaFyn1GaYqh2eT0NvZr5gSKxizjVpOkACBRQ" alt="Before and after patio cleaning" loading="lazy">
-          <span class="ba-badge">Before &amp; After</span>
-        </div>
-        <div class="gallery-item" onclick="openLightbox(16)">
-          <img src="https://4p4uvw3d9w.ufs.sh/f/GjfEcLvWS9LJr0GAQUFBN2rQxEdLJ0fbephDTgzFIyt6qXiU" alt="Professional cleaning" loading="lazy">
-        </div>
-        <div class="gallery-item" onclick="openLightbox(17)">
-          <img src="https://4p4uvw3d9w.ufs.sh/f/GjfEcLvWS9LJ0Ph29TkNJHe3ADOBbg5cIYjErxZpdWCoLK0y" alt="Before and after path cleaning" loading="lazy">
-          <span class="ba-badge">Before &amp; After</span>
-        </div>
-        <div class="gallery-item" onclick="openLightbox(18)">
-          <img src="https://4p4uvw3d9w.ufs.sh/f/GjfEcLvWS9LJOi8VR19Q1u2JtKash7RenAYdCxlZGDrM4zqB" alt="Before and after surface cleaning" loading="lazy">
-          <span class="ba-badge">Before &amp; After</span>
-        </div>
-        <div class="gallery-item" onclick="openLightbox(19)">
-          <img src="https://4p4uvw3d9w.ufs.sh/f/GjfEcLvWS9LJ2ZtTQXHQrLdSPChU1veK37iBGDuf8q62wsjA" alt="Roof cleaning results" loading="lazy">
-        </div>
+      <div class="gallery-masonry gallery-hidden" id="galleryMore">
+        <div class="gallery-item" onclick="openLightbox(12)"><img src="https://4p4uvw3d9w.ufs.sh/f/GjfEcLvWS9LJJSSDJmKjMoGpzb79k6EiexgO14jUShuv3QYF" alt="Before and after" loading="lazy"><span class="ba-badge">Before &amp; After</span></div>
+        <div class="gallery-item" onclick="openLightbox(13)"><img src="https://4p4uvw3d9w.ufs.sh/f/GjfEcLvWS9LJGXgbLpvWS9LJtFgwX3Yu4IdoHVyOm8bGskfj" alt="Gutter cleaning" loading="lazy"></div>
+        <div class="gallery-item" onclick="openLightbox(14)"><img src="https://4p4uvw3d9w.ufs.sh/f/GjfEcLvWS9LJ75PXKzcTIOkq29UedDfAsalv0EVj5Y67xuPM" alt="Before and after" loading="lazy"><span class="ba-badge">Before &amp; After</span></div>
+        <div class="gallery-item" onclick="openLightbox(15)"><img src="https://4p4uvw3d9w.ufs.sh/f/GjfEcLvWS9LJuaFyn1GaYqh2eT0NvZr5gSKxizjVpOkACBRQ" alt="Before and after" loading="lazy"><span class="ba-badge">Before &amp; After</span></div>
+        <div class="gallery-item" onclick="openLightbox(16)"><img src="https://4p4uvw3d9w.ufs.sh/f/GjfEcLvWS9LJr0GAQUFBN2rQxEdLJ0fbephDTgzFIyt6qXiU" alt="Professional cleaning" loading="lazy"></div>
+        <div class="gallery-item" onclick="openLightbox(17)"><img src="https://4p4uvw3d9w.ufs.sh/f/GjfEcLvWS9LJ0Ph29TkNJHe3ADOBbg5cIYjErxZpdWCoLK0y" alt="Before and after" loading="lazy"><span class="ba-badge">Before &amp; After</span></div>
+        <div class="gallery-item" onclick="openLightbox(18)"><img src="https://4p4uvw3d9w.ufs.sh/f/GjfEcLvWS9LJOi8VR19Q1u2JtKash7RenAYdCxlZGDrM4zqB" alt="Before and after" loading="lazy"><span class="ba-badge">Before &amp; After</span></div>
+        <div class="gallery-item" onclick="openLightbox(19)"><img src="https://4p4uvw3d9w.ufs.sh/f/GjfEcLvWS9LJ2ZtTQXHQrLdSPChU1veK37iBGDuf8q62wsjA" alt="Roof cleaning" loading="lazy"></div>
+        <div class="gallery-item" onclick="openLightbox(20)"><img src="https://4p4uvw3d9w.ufs.sh/f/GjfEcLvWS9LJA9j9EBzW80gz3BfukbiCAQYsjwrFXTHhDnPp" alt="Driveway cleaning" loading="lazy"></div>
       </div>
-
       <div class="gallery-toggle reveal">
-        <button class="btn btn-outline" id="galleryToggle" onclick="toggleGallery()">View More Photos</button>
+        <button class="btn btn-outline" id="galleryToggle" onclick="toggleGallery()" style="width:auto">View More Photos</button>
       </div>
     </div>
   </section>
 
-  <!-- ===== REVIEWS ===== -->
-  <!-- Note: These are placeholder reviews. Replace with real customer reviews as they come in. -->
-  <section class="section section-alt" id="reviews">
+  <!-- WAVE: Gallery → Reviews -->
+  <div class="wave" style="background:#fff"><svg viewBox="0 0 1440 80" preserveAspectRatio="none"><path d="M0,60 C480,0 960,80 1440,30 L1440,80 L0,80 Z" fill="var(--black)"/></svg></div>
+
+  <!-- REVIEWS (Marquee) -->
+  <section class="reviews-section" id="reviews">
     <div class="container">
-      <div class="section-header reveal">
-        <span class="section-label">What People Say</span>
+      <div class="reviews-header reveal">
+        <span class="label">What People Say</span>
         <h2>Don't Take Our Word for It</h2>
-        <p>Hear from homeowners across Barry and the Vale who finally found an exterior cleaning service they can rely on.</p>
+        <div class="rating-big">
+          <div class="stars"><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
+          <span>5.0</span>
+        </div>
       </div>
-      <div class="reviews-grid">
-        <div class="review-card reveal">
-          <div class="review-stars">
-            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-          </div>
-          <p class="review-text">"Best window cleaner we've had in 15 years of living here. Turns up when he says he will, texts the day before, and the windows are sparkling every single time. About time someone got it right."</p>
-          <div>
-            <p class="review-author">Mrs. Davies</p>
-            <p class="review-location">Highlight Park, Barry</p>
-          </div>
-        </div>
-        <div class="review-card reveal reveal-delay-1">
-          <div class="review-stars">
-            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-          </div>
-          <p class="review-text">"Had the driveway pressure washed and honestly couldn't believe the difference. It looks like we just had new slabs put down. Anthony was friendly, professional, and left no mess at all. Neighbours keep asking who did it."</p>
-          <div>
-            <p class="review-author">James T.</p>
-            <p class="review-location">Sully, Vale of Glamorgan</p>
-          </div>
-        </div>
-        <div class="review-card reveal reveal-delay-2">
-          <div class="review-stars">
-            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-          </div>
-          <p class="review-text">"Used to dread finding a window cleaner — the last three all disappeared after a few months. Anthony's been coming regular as clockwork now and the difference is massive. Wouldn't go anywhere else."</p>
-          <div>
-            <p class="review-author">Helen R.</p>
-            <p class="review-location">Penarth</p>
-          </div>
-        </div>
-        <div class="review-card reveal">
-          <div class="review-stars">
-            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-          </div>
-          <p class="review-text">"The gutters were overflowing every time it rained and I'd been putting it off for months. Anthony came out, cleared everything, and even showed me photos of what was blocked up there. Peace of mind is worth every penny."</p>
-          <div>
-            <p class="review-author">Sarah M.</p>
-            <p class="review-location">Barry</p>
-          </div>
-        </div>
-        <div class="review-card reveal reveal-delay-1">
-          <div class="review-stars">
-            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-          </div>
-          <p class="review-text">"Absolutely brilliant job on the conservatory roof. Could barely see the sky through it before, and now it's crystal clear. The whole room feels brighter. Anthony did everything he said he would, bang on time."</p>
-          <div>
-            <p class="review-author">Gwyneth P.</p>
-            <p class="review-location">Dinas Powys</p>
-          </div>
-        </div>
-        <div class="review-card reveal reveal-delay-2">
-          <div class="review-stars">
-            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-          </div>
-          <p class="review-text">"Had the full works done — windows, gutters, and driveway. It genuinely looks like a different house. The missus hasn't stopped going on about it. Already booked in for regular window cleans going forward."</p>
-          <div>
-            <p class="review-author">Mark W.</p>
-            <p class="review-location">Rhoose</p>
-          </div>
-        </div>
+    </div>
+    <div class="marquee-container">
+      <div class="marquee-track">
+        <!-- Set 1 -->
+        <div class="review-card"><div class="review-stars"><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div><p class="review-text">"Best window cleaner we've had in 15 years of living here. Turns up when he says he will, texts the day before, and the windows are sparkling every single time."</p><div><p class="review-author">Mrs. Davies</p><p class="review-location">Highlight Park, Barry</p></div></div>
+        <div class="review-card"><div class="review-stars"><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div><p class="review-text">"Had the driveway pressure washed and honestly couldn't believe the difference. It looks like we just had new slabs put down. Anthony was friendly, professional, and left no mess at all."</p><div><p class="review-author">James T.</p><p class="review-location">Sully, Vale of Glamorgan</p></div></div>
+        <div class="review-card"><div class="review-stars"><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div><p class="review-text">"Used to dread finding a window cleaner — the last three all disappeared after a few months. Anthony's been coming regular as clockwork now. Wouldn't go anywhere else."</p><div><p class="review-author">Helen R.</p><p class="review-location">Penarth</p></div></div>
+        <div class="review-card"><div class="review-stars"><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div><p class="review-text">"The gutters were overflowing every time it rained. Anthony cleared everything and showed me photos of what was blocked up there. Peace of mind is worth every penny."</p><div><p class="review-author">Sarah M.</p><p class="review-location">Barry</p></div></div>
+        <div class="review-card"><div class="review-stars"><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div><p class="review-text">"Brilliant job on the conservatory roof. Could barely see the sky through it before, now it's crystal clear. The whole room feels brighter. Bang on time too."</p><div><p class="review-author">Gwyneth P.</p><p class="review-location">Dinas Powys</p></div></div>
+        <div class="review-card"><div class="review-stars"><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div><p class="review-text">"Had the full works — windows, gutters, driveway. Genuinely looks like a different house. The missus hasn't stopped going on about it. Already booked in for regular cleans."</p><div><p class="review-author">Mark W.</p><p class="review-location">Rhoose</p></div></div>
+        <!-- Set 2 (duplicate for seamless loop) -->
+        <div class="review-card"><div class="review-stars"><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div><p class="review-text">"Best window cleaner we've had in 15 years of living here. Turns up when he says he will, texts the day before, and the windows are sparkling every single time."</p><div><p class="review-author">Mrs. Davies</p><p class="review-location">Highlight Park, Barry</p></div></div>
+        <div class="review-card"><div class="review-stars"><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div><p class="review-text">"Had the driveway pressure washed and honestly couldn't believe the difference. It looks like we just had new slabs put down. Anthony was friendly, professional, and left no mess at all."</p><div><p class="review-author">James T.</p><p class="review-location">Sully, Vale of Glamorgan</p></div></div>
+        <div class="review-card"><div class="review-stars"><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div><p class="review-text">"Used to dread finding a window cleaner — the last three all disappeared after a few months. Anthony's been coming regular as clockwork now. Wouldn't go anywhere else."</p><div><p class="review-author">Helen R.</p><p class="review-location">Penarth</p></div></div>
+        <div class="review-card"><div class="review-stars"><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div><p class="review-text">"The gutters were overflowing every time it rained. Anthony cleared everything and showed me photos of what was blocked up there. Peace of mind is worth every penny."</p><div><p class="review-author">Sarah M.</p><p class="review-location">Barry</p></div></div>
+        <div class="review-card"><div class="review-stars"><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div><p class="review-text">"Brilliant job on the conservatory roof. Could barely see the sky through it before, now it's crystal clear. The whole room feels brighter. Bang on time too."</p><div><p class="review-author">Gwyneth P.</p><p class="review-location">Dinas Powys</p></div></div>
+        <div class="review-card"><div class="review-stars"><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div><p class="review-text">"Had the full works — windows, gutters, driveway. Genuinely looks like a different house. The missus hasn't stopped going on about it. Already booked in for regular cleans."</p><div><p class="review-author">Mark W.</p><p class="review-location">Rhoose</p></div></div>
       </div>
     </div>
   </section>
 
-  <!-- ===== ABOUT ===== -->
-  <section class="section" id="about">
-    <div class="container">
-      <div class="about-grid">
-        <div class="about-img reveal">
-          <img src="https://4p4uvw3d9w.ufs.sh/f/GjfEcLvWS9LJ7KtzDVcTIOkq29UedDfAsalv0EVj5Y67xuPM" alt="Anthony - Owner of AC Windows & Cleaning Services" loading="lazy">
-        </div>
-        <div class="about-content reveal reveal-delay-1">
-          <span class="section-label">About Us</span>
-          <h2>Meet Anthony</h2>
-          <p>AC Windows & Cleaning Services started because Anthony got tired of hearing the same story from neighbours and friends across Barry — unreliable cleaners, shoddy work, and no-shows. Everyone seemed to have a horror story about a window cleaner who just vanished, or a pressure washer who left the place looking worse than before.</p>
-          <p>So he decided to do something about it. He built a service around the one thing nobody else seemed to get right: actually showing up, doing a proper job, and treating people's homes with respect. No corporate runaround. No call centres. Just a local bloke who lives in the community, knows the streets, and takes genuine pride in making your home look its absolute best.</p>
-          <p>Every job gets the same level of care — whether it's a quick window clean on a terraced house or a full exterior transformation on a detached property. Anthony and his team arrive on time, communicate clearly, and won't leave until the job's done right. That's not a slogan. That's just how they work.</p>
-          <a href="tel:01234567890" class="btn btn-primary">
-            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
-            Have a Chat with Anthony
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
+  <!-- WAVE: Reviews → About -->
+  <div class="wave" style="background:var(--black)"><svg viewBox="0 0 1440 80" preserveAspectRatio="none"><path d="M0,20 C480,80 960,0 1440,50 L1440,80 L0,80 Z" fill="#fff"/></svg></div>
 
-  <!-- ===== SERVICE AREAS ===== -->
-  <section class="section areas-section" id="areas">
-    <div class="container">
-      <div class="section-header reveal">
-        <span class="section-label">Where We Work</span>
-        <h2>Covering Barry, Cardiff &amp; The Vale</h2>
-        <p>We serve homeowners and businesses across Barry and the surrounding areas. If you're not sure whether we cover your area, just give us a ring.</p>
+  <!-- ABOUT -->
+  <section class="about-section" id="about">
+    <div class="blob blob-1"></div>
+    <div class="about-grid">
+      <div class="about-img-wrapper reveal">
+        <img src="https://4p4uvw3d9w.ufs.sh/f/GjfEcLvWS9LJ7KtzDVcTIOkq29UedDfAsalv0EVj5Y67xuPM" alt="Anthony - Owner of AC Windows & Cleaning Services" loading="lazy">
       </div>
-      <div class="areas-tags reveal">
-        <span class="area-tag">Barry</span>
-        <span class="area-tag">Cardiff</span>
-        <span class="area-tag">Penarth</span>
-        <span class="area-tag">Dinas Powys</span>
-        <span class="area-tag">Sully</span>
-        <span class="area-tag">Rhoose</span>
-        <span class="area-tag">Llantwit Major</span>
-        <span class="area-tag">Cowbridge</span>
-        <span class="area-tag">Wenvoe</span>
-        <span class="area-tag">St Athan</span>
-        <span class="area-tag">Vale of Glamorgan</span>
-        <span class="area-tag">& Surrounding Areas</span>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== FAQ ===== -->
-  <section class="section section-alt" id="faq">
-    <div class="container">
-      <div class="section-header reveal">
-        <span class="section-label">FAQ</span>
-        <h2>Got Questions? We've Got Answers</h2>
-      </div>
-      <div class="faq-list reveal">
-        <div class="faq-item">
-          <button class="faq-question" onclick="toggleFaq(this)">
-            How much does it cost?
-            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
-          </button>
-          <div class="faq-answer">
-            <p>Every property is different, so we provide free, no-obligation quotes tailored to your home. Give us a call, tell us what you need, and we'll give you an honest price on the spot. No hidden fees, no surprises. We charge fairly for thorough, professional work.</p>
-          </div>
-        </div>
-        <div class="faq-item">
-          <button class="faq-question" onclick="toggleFaq(this)">
-            How often should I get my windows cleaned?
-            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
-          </button>
-          <div class="faq-answer">
-            <p>Most of our customers go with every 4 weeks — that keeps them looking consistently clean without buildup. Some prefer every 6 or 8 weeks, which works well too. We'll set up a regular schedule that suits you, and you won't have to think about it again.</p>
-          </div>
-        </div>
-        <div class="faq-item">
-          <button class="faq-question" onclick="toggleFaq(this)">
-            Do you clean in the rain?
-            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
-          </button>
-          <div class="faq-answer">
-            <p>This is Wales, so if we stopped for rain we'd never get anything done. But seriously — yes. Rain doesn't affect the quality of our work because we use purified water systems. Rainwater is clean; it's the dust and dirt on the glass that causes marks. Your windows will still be spotless, rain or shine.</p>
-          </div>
-        </div>
-        <div class="faq-item">
-          <button class="faq-question" onclick="toggleFaq(this)">
-            Are you fully insured?
-            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
-          </button>
-          <div class="faq-answer">
-            <p>Absolutely. We carry full public liability insurance so you're completely covered. We're also happy to provide proof of insurance if you'd like to see it — just ask.</p>
-          </div>
-        </div>
-        <div class="faq-item">
-          <button class="faq-question" onclick="toggleFaq(this)">
-            Do I need to be home?
-            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
-          </button>
-          <div class="faq-answer">
-            <p>Not at all. Most of our regular customers aren't home when we clean. As long as we can access the property, we'll get the job done. We always text before we arrive, and we'll let you know once we're finished.</p>
-          </div>
-        </div>
-        <div class="faq-item">
-          <button class="faq-question" onclick="toggleFaq(this)">
-            How do I pay?
-            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
-          </button>
-          <div class="faq-answer">
-            <p>We accept bank transfer, cash, or card — whatever's easiest for you. For regular customers, we can set up a simple payment schedule so you don't have to think about it each time.</p>
-          </div>
-        </div>
-        <div class="faq-item">
-          <button class="faq-question" onclick="toggleFaq(this)">
-            What if I'm not happy with the results?
-            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
-          </button>
-          <div class="faq-answer">
-            <p>Just tell us. We'll come back and sort it out — no arguments, no extra charge. We take pride in our work and we're not happy unless you are. It's that simple.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== CTA SECTION ===== -->
-  <section class="section cta-section">
-    <div class="container reveal">
-      <h2>Your Home Deserves to Look Its Best</h2>
-      <p>Stop putting it off. One phone call and we'll have your windows sparkling, your driveway spotless, and your gutters sorted. Free quote, no obligation, no hassle.</p>
-      <div style="display: flex; flex-wrap: wrap; gap: 0.75rem; justify-content: center;">
-        <a href="tel:01234567890" class="btn btn-white">
-          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
-          Call 01234 567 890
+      <div class="about-content reveal reveal-d1">
+        <span class="label">About Us</span>
+        <h2>Meet <span class="highlight">Anthony</span></h2>
+        <p>AC Windows & Cleaning Services started because Anthony got tired of hearing the same story from neighbours and friends across Barry — unreliable cleaners, shoddy work, and no-shows. Everyone had a horror story about a window cleaner who just vanished, or a pressure washer who left the place worse than before.</p>
+        <div class="about-quote">"If you want something done right, do it yourself. So that's exactly what I did."</div>
+        <p>He built a service around the one thing nobody else seemed to get right: actually showing up, doing a proper job, and treating people's homes with respect. No corporate runaround. Just a local bloke who lives in the community, knows the streets, and takes genuine pride in making your home look its absolute best.</p>
+        <p>Every job gets the same care — whether it's a quick window clean on a terraced house or a full exterior transformation. Anthony and his team arrive on time, communicate clearly, and won't leave until the job's done right.</p>
+        <a href="tel:01234567890" class="btn btn-primary" style="width:auto">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          Have a Chat with Anthony
         </a>
       </div>
     </div>
   </section>
 
-  <!-- ===== FOOTER ===== -->
+  <!-- WAVE: About → Areas -->
+  <div class="wave" style="background:#fff"><svg viewBox="0 0 1440 80" preserveAspectRatio="none"><path d="M0,30 C480,80 960,0 1440,50 L1440,80 L0,80 Z" fill="var(--g50)"/></svg></div>
+
+  <!-- SERVICE AREAS -->
+  <section class="areas-section" id="areas">
+    <div class="container">
+      <div class="areas-header reveal">
+        <span class="label">Where We Work</span>
+        <h2>Covering Barry, Cardiff &amp; The Vale</h2>
+        <p>If you're not sure whether we cover your area, just give us a ring.</p>
+      </div>
+      <div class="areas-tags reveal">
+        <span class="area-tag">Barry</span><span class="area-tag">Cardiff</span><span class="area-tag">Penarth</span><span class="area-tag">Dinas Powys</span><span class="area-tag">Sully</span><span class="area-tag">Rhoose</span><span class="area-tag">Llantwit Major</span><span class="area-tag">Cowbridge</span><span class="area-tag">Wenvoe</span><span class="area-tag">St Athan</span><span class="area-tag">Vale of Glamorgan</span><span class="area-tag">& Surrounding Areas</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- WAVE: Areas → FAQ -->
+  <div class="wave" style="background:var(--g50)"><svg viewBox="0 0 1440 80" preserveAspectRatio="none"><path d="M0,50 C360,0 1080,80 1440,20 L1440,80 L0,80 Z" fill="#fff"/></svg></div>
+
+  <!-- FAQ -->
+  <section class="faq-section" id="faq">
+    <div class="faq-inner">
+      <div class="faq-left reveal">
+        <span class="label">FAQ</span>
+        <h2>Got Questions?</h2>
+        <p>Everything you might be wondering before you pick up the phone. And if your question isn't here, just ask — we're happy to chat.</p>
+        <a href="tel:01234567890" class="btn btn-primary" style="width:auto">Call Us</a>
+      </div>
+      <div class="faq-list reveal reveal-d1">
+        <div class="faq-item"><button class="faq-question" onclick="toggleFaq(this)">How much does it cost?<svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button><div class="faq-answer"><p>Every property is different, so we provide free, no-obligation quotes tailored to your home. Give us a call, tell us what you need, and we'll give you an honest price on the spot. No hidden fees, no surprises.</p></div></div>
+        <div class="faq-item"><button class="faq-question" onclick="toggleFaq(this)">How often should I get my windows cleaned?<svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button><div class="faq-answer"><p>Most customers go with every 4 weeks — keeps them consistently clean without buildup. Some prefer every 6 or 8 weeks. We set up a schedule that suits you and you won't have to think about it again.</p></div></div>
+        <div class="faq-item"><button class="faq-question" onclick="toggleFaq(this)">Do you clean in the rain?<svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button><div class="faq-answer"><p>This is Wales, so if we stopped for rain we'd never get anything done. We use purified water systems — rainwater is clean and doesn't affect the finish. Your windows will be spotless, rain or shine.</p></div></div>
+        <div class="faq-item"><button class="faq-question" onclick="toggleFaq(this)">Are you fully insured?<svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button><div class="faq-answer"><p>Absolutely. Full public liability insurance. Happy to provide proof if you'd like to see it — just ask.</p></div></div>
+        <div class="faq-item"><button class="faq-question" onclick="toggleFaq(this)">Do I need to be home?<svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button><div class="faq-answer"><p>Not at all. Most regulars aren't home when we clean. As long as we can access the property, we'll sort it. We text before we arrive and let you know once we're done.</p></div></div>
+        <div class="faq-item"><button class="faq-question" onclick="toggleFaq(this)">How do I pay?<svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button><div class="faq-answer"><p>Bank transfer, cash, or card — whatever's easiest. For regulars we can set up a simple payment schedule so you don't have to think about it.</p></div></div>
+        <div class="faq-item"><button class="faq-question" onclick="toggleFaq(this)">What if I'm not happy with the results?<svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button><div class="faq-answer"><p>Tell us. We come back and sort it — no arguments, no extra charge. We're not happy unless you are.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="container cta-inner reveal">
+      <h2>Your Home Deserves to <span class="highlight">Look Its Best</span></h2>
+      <p>Stop putting it off. One phone call and we'll have your windows sparkling, your driveway spotless, and your gutters sorted. Free quote, no obligation.</p>
+      <a href="tel:01234567890" class="btn btn-white">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        Call 01234 567 890
+      </a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
   <footer class="footer">
     <div class="footer-inner">
       <div class="footer-brand">
         <img src="https://4p4uvw3d9w.ufs.sh/f/GjfEcLvWS9LJCKuuEyJ48yVYURZTOdogIpMDvf52EiWr3Nn0" alt="AC Windows & Cleaning Services">
         <p>Professional window cleaning and exterior cleaning services across Barry, Cardiff, and the Vale of Glamorgan. Reliable service, sparkling results, every time.</p>
       </div>
-      <div>
-        <h4>Services</h4>
-        <ul>
-          <li><a href="#services">Window Cleaning</a></li>
-          <li><a href="#services">Pressure Washing</a></li>
-          <li><a href="#services">Gutter Cleaning</a></li>
-          <li><a href="#services">Roof Cleaning</a></li>
-          <li><a href="#services">Driveway Cleaning</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4>Contact</h4>
-        <ul>
-          <li><a href="tel:01234567890">01234 567 890</a></li>
-          <li>Barry, Vale of Glamorgan</li>
-          <li style="margin-top: 1rem;"><a href="#services">Services</a></li>
-          <li><a href="#gallery">Gallery</a></li>
-          <li><a href="#reviews">Reviews</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#faq">FAQ</a></li>
-        </ul>
-      </div>
+      <div><h4>Services</h4><ul><li><a href="#services">Window Cleaning</a></li><li><a href="#services">Pressure Washing</a></li><li><a href="#services">Gutter Cleaning</a></li><li><a href="#services">Roof Cleaning</a></li><li><a href="#services">Driveway Cleaning</a></li></ul></div>
+      <div><h4>Contact</h4><ul><li><a href="tel:01234567890">01234 567 890</a></li><li>Barry, Vale of Glamorgan</li><li style="margin-top:1rem"><a href="#services">Services</a></li><li><a href="#gallery">Gallery</a></li><li><a href="#reviews">Reviews</a></li><li><a href="#about">About</a></li></ul></div>
     </div>
-    <div class="footer-bottom">
-      <p>&copy; 2026 AC Windows & Cleaning Services. All rights reserved.</p>
-    </div>
+    <div class="footer-bottom"><p>&copy; 2026 AC Windows & Cleaning Services. All rights reserved.</p></div>
   </footer>
 
-  <!-- ===== MOBILE CTA BAR ===== -->
+  <!-- MOBILE CTA BAR -->
   <div class="mobile-cta-bar">
     <a href="tel:01234567890">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
       Call for a Free Quote
     </a>
   </div>
 
-  <!-- ===== LIGHTBOX ===== -->
+  <!-- LIGHTBOX -->
   <div class="lightbox" id="lightbox">
     <button class="lightbox-close" onclick="closeLightbox()">&times;</button>
     <button class="lightbox-nav lightbox-prev" onclick="navigateLightbox(-1)">&#8249;</button>
@@ -1361,158 +752,41 @@
     <button class="lightbox-nav lightbox-next" onclick="navigateLightbox(1)">&#8250;</button>
   </div>
 
-  <!-- ===== SCRIPTS ===== -->
   <script src="https://embed.cloudflarestream.com/embed/sdk.latest.js"></script>
   <script>
-    // ===== HEADER SCROLL BEHAVIOR =====
-    let lastScroll = 0;
-    const header = document.getElementById('header');
-    window.addEventListener('scroll', () => {
-      const currentScroll = window.scrollY;
-      if (currentScroll > lastScroll && currentScroll > 100) {
-        header.classList.add('hidden');
-      } else {
-        header.classList.remove('hidden');
-      }
-      lastScroll = currentScroll;
-    }, { passive: true });
+    // Header
+    let lastScroll=0;const header=document.getElementById('header');
+    window.addEventListener('scroll',()=>{const s=window.scrollY;header.classList.toggle('hidden',s>lastScroll&&s>100);header.classList.toggle('scrolled',s>10);lastScroll=s},{passive:true});
 
-    // ===== MOBILE MENU =====
-    const hamburger = document.getElementById('hamburger');
-    const mobileMenu = document.getElementById('mobileMenu');
-    hamburger.addEventListener('click', () => {
-      hamburger.classList.toggle('active');
-      mobileMenu.classList.toggle('active');
-      document.body.style.overflow = mobileMenu.classList.contains('active') ? 'hidden' : '';
-    });
-    function closeMenu() {
-      hamburger.classList.remove('active');
-      mobileMenu.classList.remove('active');
-      document.body.style.overflow = '';
-    }
+    // Mobile menu
+    const hamburger=document.getElementById('hamburger'),mm=document.getElementById('mobileMenu');
+    hamburger.addEventListener('click',()=>{hamburger.classList.toggle('active');mm.classList.toggle('active');document.body.style.overflow=mm.classList.contains('active')?'hidden':''});
+    function closeMenu(){hamburger.classList.remove('active');mm.classList.remove('active');document.body.style.overflow=''}
 
-    // ===== SCROLL REVEAL ANIMATION =====
-    const revealObserver = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
-          revealObserver.unobserve(entry.target);
-        }
-      });
-    }, { threshold: 0.12 });
-    document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+    // Scroll reveal
+    const ro=new IntersectionObserver(e=>{e.forEach(n=>{if(n.isIntersecting){n.target.classList.add('visible');ro.unobserve(n.target)}})},{threshold:0.1});
+    document.querySelectorAll('.reveal').forEach(el=>ro.observe(el));
 
-    // ===== GALLERY LIGHTBOX =====
-    const galleryImages = [
-      'https://4p4uvw3d9w.ufs.sh/f/GjfEcLvWS9LJkoXP3GlE0lJBDHoyKRvr9LptgfUa5q4eIA2n',
-      'https://4p4uvw3d9w.ufs.sh/f/GjfEcLvWS9LJBtvzCCfbAa6hJVdgiXxl5M4jEf37ZSTQktNo',
-      'https://4p4uvw3d9w.ufs.sh/f/GjfEcLvWS9LJm4tFzoEkgFba8pqtU9wXV4SDv7hPo3xzYuWs',
-      'https://4p4uvw3d9w.ufs.sh/f/GjfEcLvWS9LJaCjKhWiRnzApU9vfZ1HWBKgxkoytXMIQ4bOs',
-      'https://4p4uvw3d9w.ufs.sh/f/GjfEcLvWS9LJ7bkrfWcTIOkq29UedDfAsalv0EVj5Y67xuPM',
-      'https://4p4uvw3d9w.ufs.sh/f/GjfEcLvWS9LJGHPOnKpvWS9LJtFgwX3Yu4IdoHVyOm8bGskf',
-      'https://4p4uvw3d9w.ufs.sh/f/GjfEcLvWS9LJ5lqzg2782gBaiH7fqEnsS3DkeZ6TK1JudjpN',
-      'https://4p4uvw3d9w.ufs.sh/f/GjfEcLvWS9LJrz3SjbBN2rQxEdLJ0fbephDTgzFIyt6qXiUO',
-      'https://4p4uvw3d9w.ufs.sh/f/GjfEcLvWS9LJxDJL7KR6ZPeEThtcOU5Hslj8uiWd2RXV3Jfb',
-      'https://4p4uvw3d9w.ufs.sh/f/GjfEcLvWS9LJsZ2qbtPTjW3bSrpqfca6MKu5RkQl8F9mBXwy',
-      'https://4p4uvw3d9w.ufs.sh/f/GjfEcLvWS9LJ5tSjYQ782gBaiH7fqEnsS3DkeZ6TK1JudjpN',
-      'https://4p4uvw3d9w.ufs.sh/f/GjfEcLvWS9LJ5vcJGZ782gBaiH7fqEnsS3DkeZ6TK1JudjpN',
-      'https://4p4uvw3d9w.ufs.sh/f/GjfEcLvWS9LJJSSDJmKjMoGpzb79k6EiexgO14jUShuv3QYF',
-      'https://4p4uvw3d9w.ufs.sh/f/GjfEcLvWS9LJGXgbLpvWS9LJtFgwX3Yu4IdoHVyOm8bGskfj',
-      'https://4p4uvw3d9w.ufs.sh/f/GjfEcLvWS9LJ75PXKzcTIOkq29UedDfAsalv0EVj5Y67xuPM',
-      'https://4p4uvw3d9w.ufs.sh/f/GjfEcLvWS9LJuaFyn1GaYqh2eT0NvZr5gSKxizjVpOkACBRQ',
-      'https://4p4uvw3d9w.ufs.sh/f/GjfEcLvWS9LJr0GAQUFBN2rQxEdLJ0fbephDTgzFIyt6qXiU',
-      'https://4p4uvw3d9w.ufs.sh/f/GjfEcLvWS9LJ0Ph29TkNJHe3ADOBbg5cIYjErxZpdWCoLK0y',
-      'https://4p4uvw3d9w.ufs.sh/f/GjfEcLvWS9LJOi8VR19Q1u2JtKash7RenAYdCxlZGDrM4zqB',
-      'https://4p4uvw3d9w.ufs.sh/f/GjfEcLvWS9LJ2ZtTQXHQrLdSPChU1veK37iBGDuf8q62wsjA'
-    ];
-    let currentLightboxIndex = 0;
+    // Gallery lightbox
+    const gi=['https://4p4uvw3d9w.ufs.sh/f/GjfEcLvWS9LJkoXP3GlE0lJBDHoyKRvr9LptgfUa5q4eIA2n','https://4p4uvw3d9w.ufs.sh/f/GjfEcLvWS9LJBtvzCCfbAa6hJVdgiXxl5M4jEf37ZSTQktNo','https://4p4uvw3d9w.ufs.sh/f/GjfEcLvWS9LJm4tFzoEkgFba8pqtU9wXV4SDv7hPo3xzYuWs','https://4p4uvw3d9w.ufs.sh/f/GjfEcLvWS9LJaCjKhWiRnzApU9vfZ1HWBKgxkoytXMIQ4bOs','https://4p4uvw3d9w.ufs.sh/f/GjfEcLvWS9LJ7bkrfWcTIOkq29UedDfAsalv0EVj5Y67xuPM','https://4p4uvw3d9w.ufs.sh/f/GjfEcLvWS9LJGHPOnKpvWS9LJtFgwX3Yu4IdoHVyOm8bGskf','https://4p4uvw3d9w.ufs.sh/f/GjfEcLvWS9LJ5lqzg2782gBaiH7fqEnsS3DkeZ6TK1JudjpN','https://4p4uvw3d9w.ufs.sh/f/GjfEcLvWS9LJrz3SjbBN2rQxEdLJ0fbephDTgzFIyt6qXiUO','https://4p4uvw3d9w.ufs.sh/f/GjfEcLvWS9LJxDJL7KR6ZPeEThtcOU5Hslj8uiWd2RXV3Jfb','https://4p4uvw3d9w.ufs.sh/f/GjfEcLvWS9LJsZ2qbtPTjW3bSrpqfca6MKu5RkQl8F9mBXwy','https://4p4uvw3d9w.ufs.sh/f/GjfEcLvWS9LJ5tSjYQ782gBaiH7fqEnsS3DkeZ6TK1JudjpN','https://4p4uvw3d9w.ufs.sh/f/GjfEcLvWS9LJ5vcJGZ782gBaiH7fqEnsS3DkeZ6TK1JudjpN','https://4p4uvw3d9w.ufs.sh/f/GjfEcLvWS9LJJSSDJmKjMoGpzb79k6EiexgO14jUShuv3QYF','https://4p4uvw3d9w.ufs.sh/f/GjfEcLvWS9LJGXgbLpvWS9LJtFgwX3Yu4IdoHVyOm8bGskfj','https://4p4uvw3d9w.ufs.sh/f/GjfEcLvWS9LJ75PXKzcTIOkq29UedDfAsalv0EVj5Y67xuPM','https://4p4uvw3d9w.ufs.sh/f/GjfEcLvWS9LJuaFyn1GaYqh2eT0NvZr5gSKxizjVpOkACBRQ','https://4p4uvw3d9w.ufs.sh/f/GjfEcLvWS9LJr0GAQUFBN2rQxEdLJ0fbephDTgzFIyt6qXiU','https://4p4uvw3d9w.ufs.sh/f/GjfEcLvWS9LJ0Ph29TkNJHe3ADOBbg5cIYjErxZpdWCoLK0y','https://4p4uvw3d9w.ufs.sh/f/GjfEcLvWS9LJOi8VR19Q1u2JtKash7RenAYdCxlZGDrM4zqB','https://4p4uvw3d9w.ufs.sh/f/GjfEcLvWS9LJ2ZtTQXHQrLdSPChU1veK37iBGDuf8q62wsjA','https://4p4uvw3d9w.ufs.sh/f/GjfEcLvWS9LJA9j9EBzW80gz3BfukbiCAQYsjwrFXTHhDnPp'];
+    let ci=0;
+    function openLightbox(i){ci=i;document.getElementById('lightboxImg').src=gi[i];document.getElementById('lightbox').classList.add('active');document.body.style.overflow='hidden'}
+    function closeLightbox(){document.getElementById('lightbox').classList.remove('active');document.body.style.overflow=''}
+    function navigateLightbox(d){ci=(ci+d+gi.length)%gi.length;document.getElementById('lightboxImg').src=gi[ci]}
+    document.getElementById('lightbox').addEventListener('click',e=>{if(e.target===e.currentTarget)closeLightbox()});
+    document.addEventListener('keydown',e=>{if(!document.getElementById('lightbox').classList.contains('active'))return;if(e.key==='Escape')closeLightbox();if(e.key==='ArrowLeft')navigateLightbox(-1);if(e.key==='ArrowRight')navigateLightbox(1)});
 
-    function openLightbox(index) {
-      currentLightboxIndex = index;
-      const lightbox = document.getElementById('lightbox');
-      const img = document.getElementById('lightboxImg');
-      img.src = galleryImages[index];
-      lightbox.classList.add('active');
-      document.body.style.overflow = 'hidden';
-    }
-    function closeLightbox() {
-      document.getElementById('lightbox').classList.remove('active');
-      document.body.style.overflow = '';
-    }
-    function navigateLightbox(dir) {
-      currentLightboxIndex = (currentLightboxIndex + dir + galleryImages.length) % galleryImages.length;
-      document.getElementById('lightboxImg').src = galleryImages[currentLightboxIndex];
-    }
-    document.getElementById('lightbox').addEventListener('click', (e) => {
-      if (e.target === e.currentTarget) closeLightbox();
-    });
-    document.addEventListener('keydown', (e) => {
-      if (!document.getElementById('lightbox').classList.contains('active')) return;
-      if (e.key === 'Escape') closeLightbox();
-      if (e.key === 'ArrowLeft') navigateLightbox(-1);
-      if (e.key === 'ArrowRight') navigateLightbox(1);
-    });
+    // Gallery toggle
+    function toggleGallery(){const m=document.getElementById('galleryMore'),b=document.getElementById('galleryToggle');m.classList.toggle('show');b.textContent=m.classList.contains('show')?'Show Less':'View More Photos'}
 
-    // ===== GALLERY TOGGLE =====
-    function toggleGallery() {
-      const moreGrid = document.getElementById('galleryMore');
-      const btn = document.getElementById('galleryToggle');
-      moreGrid.classList.toggle('show');
-      btn.textContent = moreGrid.classList.contains('show') ? 'Show Less' : 'View More Photos';
-    }
+    // FAQ
+    function toggleFaq(btn){const item=btn.parentElement,ans=item.querySelector('.faq-answer'),was=item.classList.contains('active');document.querySelectorAll('.faq-item').forEach(i=>{i.classList.remove('active');i.querySelector('.faq-answer').style.maxHeight=null});if(!was){item.classList.add('active');ans.style.maxHeight=ans.scrollHeight+'px'}}
 
-    // ===== FAQ ACCORDION =====
-    function toggleFaq(btn) {
-      const item = btn.parentElement;
-      const answer = item.querySelector('.faq-answer');
-      const wasActive = item.classList.contains('active');
+    // Video sync
+    try{const bi=document.getElementById('video-before'),ai=document.getElementById('video-after');if(bi&&ai&&typeof Stream!=='undefined'){const bp=Stream(bi),ap=Stream(ai);ap.addEventListener('ended',()=>{setTimeout(()=>{bp.currentTime=0;ap.currentTime=0;bp.play();ap.play()},1000)})}}catch(e){}
 
-      // Close all
-      document.querySelectorAll('.faq-item').forEach(i => {
-        i.classList.remove('active');
-        i.querySelector('.faq-answer').style.maxHeight = null;
-      });
-
-      // Open clicked if it wasn't already open
-      if (!wasActive) {
-        item.classList.add('active');
-        answer.style.maxHeight = answer.scrollHeight + 'px';
-      }
-    }
-
-    // ===== VIDEO SYNC =====
-    // Sync before/after videos: before (3s) freezes, after (8s) plays to end, then both restart
-    try {
-      const beforeIframe = document.getElementById('video-before');
-      const afterIframe = document.getElementById('video-after');
-
-      if (beforeIframe && afterIframe && typeof Stream !== 'undefined') {
-        const beforePlayer = Stream(beforeIframe);
-        const afterPlayer = Stream(afterIframe);
-
-        afterPlayer.addEventListener('ended', function() {
-          setTimeout(function() {
-            beforePlayer.currentTime = 0;
-            afterPlayer.currentTime = 0;
-            beforePlayer.play();
-            afterPlayer.play();
-          }, 1000);
-        });
-      }
-    } catch (e) {
-      // Stream SDK not available - videos will play independently
-    }
-
-    // ===== SMOOTH SCROLL FOR ANCHOR LINKS =====
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function(e) {
-        const target = document.querySelector(this.getAttribute('href'));
-        if (target) {
-          e.preventDefault();
-          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        }
-      });
-    });
+    // Smooth scroll
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{a.addEventListener('click',function(e){const t=document.querySelector(this.getAttribute('href'));if(t){e.preventDefault();t.scrollIntoView({behavior:'smooth',block:'start'})}})});
   </script>
 </body>
 </html>
