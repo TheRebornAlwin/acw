@@ -16,7 +16,6 @@
 7. https://4p4uvw3d9w.ufs.sh/f/GjfEcLvWS9LJm4tFzoEkgFba8pqtU9wXV4SDv7hPo3xzYuWs
 8. https://4p4uvw3d9w.ufs.sh/f/GjfEcLvWS9LJ7bkrfWcTIOkq29UedDfAsalv0EVj5Y67xuPM
 9. https://4p4uvw3d9w.ufs.sh/f/GjfEcLvWS9LJ5lqzg2782gBaiH7fqEnsS3DkeZ6TK1JudjpN
-10. https://4p4uvw3d9w.ufs.sh/f/GjfEcLvWS9LJxDJL7KR6ZPeEThtcOU5Hslj8uiWd2RXV3Jfb
 
 ## Before & After Images
 
@@ -30,8 +29,7 @@
 3. https://4p4uvw3d9w.ufs.sh/f/GjfEcLvWS9LJGHPOnKpvWS9LJtFgwX3Yu4IdoHVyOm8bGskf
 4. https://4p4uvw3d9w.ufs.sh/f/GjfEcLvWS9LJrz3SjbBN2rQxEdLJ0fbephDTgzFIyt6qXiUO
 5. https://4p4uvw3d9w.ufs.sh/f/GjfEcLvWS9LJ5tSjYQ782gBaiH7fqEnsS3DkeZ6TK1JudjpN
-6. https://4p4uvw3d9w.ufs.sh/f/GjfEcLvWS9LJ5vcJGZ782gBaiH7fqEnsS3DkeZ6TK1JudjpN
-7. https://4p4uvw3d9w.ufs.sh/f/GjfEcLvWS9LJJSSDJmKjMoGpzb79k6EiexgO14jUShuv3QYF
+6. https://4p4uvw3d9w.ufs.sh/f/GjfEcLvWS9LJJSSDJmKjMoGpzb79k6EiexgO14jUShuv3QYF
 8. https://4p4uvw3d9w.ufs.sh/f/GjfEcLvWS9LJ75PXKzcTIOkq29UedDfAsalv0EVj5Y67xuPM
 9. https://4p4uvw3d9w.ufs.sh/f/GjfEcLvWS9LJuaFyn1GaYqh2eT0NvZr5gSKxizjVpOkACBRQ
 10. https://4p4uvw3d9w.ufs.sh/f/GjfEcLvWS9LJ0Ph29TkNJHe3ADOBbg5cIYjErxZpdWCoLK0y
