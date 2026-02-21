@@ -293,6 +293,8 @@
     .footer ul li a{font-size:0.85rem;color:rgba(255,255,255,0.85);transition:color 0.25s}
     .footer ul li a:hover{color:var(--cyan)}
     .footer-bottom{max-width:var(--max);margin:2.5rem auto 0;padding:1.25rem 1.5rem 0;border-top:1px solid rgba(255,255,255,0.06);font-size:0.75rem;text-align:center;color:rgba(255,255,255,0.7)}
+    .ttd-link{color:var(--cyan);transition:color 0.25s,text-shadow 0.25s}
+    .ttd-link:hover{color:var(--cyan);text-shadow:0 0 12px rgba(108,255,200,0.6),0 0 24px rgba(108,255,200,0.3)}
 
     /* ===== ANIMATIONS ===== */
     .reveal{opacity:0;transform:translateY(32px);transition:opacity 0.8s cubic-bezier(0.4,0,0.2,1),transform 0.8s cubic-bezier(0.4,0,0.2,1)}
@@ -334,7 +336,7 @@
       .hero{padding-top:calc(var(--hdr) + 2rem);min-height:auto}
       .hero-videos{max-height:300px;max-width:300px}
       .video-col iframe{min-height:260px}
-      .gallery-masonry{columns:2;column-gap:0.5rem}
+      .gallery-masonry{columns:1}
       .gallery-item{margin-bottom:0.5rem}
       .about-content{text-align:center}
       .about-quote{text-align:center}
@@ -357,7 +359,7 @@
     @media(max-width:480px){
       .hero-videos{max-height:240px;max-width:240px}
       .video-col iframe{min-height:200px}
-      .gallery-masonry{columns:2}
+      .gallery-masonry{columns:1}
       .trust-bar-inner{grid-template-columns:1fr 1fr}
     }
   </style>
@@ -404,7 +406,7 @@
       <div class="hero-content reveal">
         <span class="label">Barry, Cardiff &amp; The Vale</span>
         <h1>Your Home, <span class="highlight">Transformed.</span></h1>
-        <p>Windows, driveways, gutters, roofs. I make them look like the day they were fitted. Done right, on time, every single time. No chasing, no excuses, no messing about.</p>
+        <p>Windows, driveways, gutters, roofs, and more. I make them look like the day they were fitted, which means done right, on time, every single time.</p>
         <div class="hero-buttons">
           <a href="tel:07534447688" class="btn btn-primary">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
@@ -462,7 +464,7 @@
       <div class="services-header reveal">
         <span class="label">What I Do</span>
         <h2>Every Surface, <span class="highlight">Spotless</span></h2>
-        <p>Whether it's streaky windows driving you mad, a driveway that's turned into a slip hazard, or gutters overflowing every time it rains... I sort it. Properly.</p>
+        <p>Whether it's streaky windows driving you mad, a driveway that's turned into a slip hazard, or gutters overflowing every time it rains... I sort it properly.</p>
       </div>
       <div class="services-layout">
         <!-- Featured card -->
@@ -525,7 +527,7 @@
       <div class="process-header reveal">
         <span class="label">How It Works</span>
         <h2>Ridiculously Simple</h2>
-        <p>No chasing, no guessing, no nonsense. Here's exactly what happens.</p>
+        <p>Here's exactly what happens:</p>
       </div>
       <div class="process-steps-row">
         <div class="process-step-card reveal">
@@ -535,7 +537,7 @@
           </div>
           <div class="step-content">
             <h3>Give Me a Call</h3>
-            <p>Tell me what needs doing. Honest quote, no pressure, no obligation.</p>
+            <p>Tell me what needs doing.</p>
           </div>
         </div>
         <div class="process-step-card reveal reveal-d1">
@@ -545,7 +547,7 @@
           </div>
           <div class="step-content">
             <h3>I Book You In</h3>
-            <p>Pick a day that works. I text you to confirm. And yes, I actually show up.</p>
+            <p>Pick a day that works, and I text you to confirm.</p>
           </div>
         </div>
         <div class="process-step-card reveal reveal-d2">
@@ -555,7 +557,7 @@
           </div>
           <div class="step-content">
             <h3>I Get to Work</h3>
-            <p>I arrive, do a thorough job, and leave your property spotless. No mess, no shortcuts.</p>
+            <p>I arrive, do a thorough job, and leave your property spotless.</p>
           </div>
         </div>
         <div class="process-step-card reveal reveal-d3">
@@ -565,7 +567,7 @@
           </div>
           <div class="step-content">
             <h3>Enjoy the Results</h3>
-            <p>Sit back and admire. Not happy? I come back and make it right. That's my guarantee.</p>
+            <p>Sit back and admire!</p>
           </div>
         </div>
       </div>
@@ -581,7 +583,7 @@
       <div class="gallery-header reveal">
         <span class="label">My Work</span>
         <h2>See the Difference <span class="highlight">for Yourself</span></h2>
-        <p>Real results from real homes across Barry, Cardiff, and the Vale. Every photo is my actual work. No stock images, no filters.</p>
+        <p>Photos from homes across Barry, Cardiff, and the Vale.</p>
       </div>
       <div class="gallery-masonry" id="galleryMain">
         <div class="gallery-item" onclick="openLightbox(0)"><img src="https://4p4uvw3d9w.ufs.sh/f/GjfEcLvWS9LJkoXP3GlE0lJBDHoyKRvr9LptgfUa5q4eIA2n" alt="Cleaning results" loading="lazy"></div>
@@ -673,7 +675,7 @@
         <p>Every job gets the same care, whether it's a quick window clean on a terraced house or a full exterior transformation. I arrive on time, communicate clearly, and won't leave until the job's done right.</p>
         <a href="tel:07534447688" class="btn btn-primary" style="width:auto">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-          Have a Chat with Anthony
+          Call Me
         </a>
       </div>
     </div>
@@ -709,13 +711,13 @@
         <a href="tel:07534447688" class="btn btn-primary" style="width:auto">Call Me</a>
       </div>
       <div class="faq-list reveal reveal-d1">
-        <div class="faq-item"><button class="faq-question" onclick="toggleFaq(this)">How much does it cost?<svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button><div class="faq-answer"><p>Every property is different, so I provide free, no-obligation quotes tailored to your home. Give me a call, tell me what you need, and I'll give you an honest price on the spot. No hidden fees, no surprises.</p></div></div>
+        <div class="faq-item"><button class="faq-question" onclick="toggleFaq(this)">How much does it cost?<svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button><div class="faq-answer"><p>Every property is different, so I provide free, no-obligation quotes tailored to your home. Give me a call, tell me what you need, and I'll give you an honest price on the spot.</p></div></div>
         <div class="faq-item"><button class="faq-question" onclick="toggleFaq(this)">How often should I get my windows cleaned?<svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button><div class="faq-answer"><p>Most customers go with every 4 weeks, which keeps them consistently clean without buildup. Some prefer every 6 or 8 weeks. I set up a schedule that suits you and you won't have to think about it again.</p></div></div>
         <div class="faq-item"><button class="faq-question" onclick="toggleFaq(this)">Do you clean in the rain?<svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button><div class="faq-answer"><p>This is Wales, so if I stopped for rain I'd never get anything done. I use purified water systems, so rainwater is clean and doesn't affect the finish. Your windows will be spotless, rain or shine.</p></div></div>
         <div class="faq-item"><button class="faq-question" onclick="toggleFaq(this)">Are you fully insured?<svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button><div class="faq-answer"><p>Absolutely. Full public liability insurance. Happy to provide proof if you'd like to see it, just ask.</p></div></div>
         <div class="faq-item"><button class="faq-question" onclick="toggleFaq(this)">Do I need to be home?<svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button><div class="faq-answer"><p>Not at all. Most regulars aren't home when I clean. As long as I can access the property, I'll sort it. I text before I arrive and let you know once I'm done.</p></div></div>
         <div class="faq-item"><button class="faq-question" onclick="toggleFaq(this)">How do I pay?<svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button><div class="faq-answer"><p>Bank transfer, cash, or card. Whatever's easiest. For regulars I can set up a simple payment schedule so you don't have to think about it.</p></div></div>
-        <div class="faq-item"><button class="faq-question" onclick="toggleFaq(this)">What if I'm not happy with the results?<svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button><div class="faq-answer"><p>Tell me. I come back and sort it. No arguments, no extra charge. I'm not happy unless you are.</p></div></div>
+        <div class="faq-item"><button class="faq-question" onclick="toggleFaq(this)">What if I'm not happy with the results?<svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button><div class="faq-answer"><p>Tell me, I'll come back to sort it, because I'm not happy with the work unless you are.</p></div></div>
       </div>
     </div>
   </section>
@@ -742,7 +744,7 @@
       <div><h4>Services</h4><ul><li><a href="#services">Window Cleaning</a></li><li><a href="#services">Pressure Washing</a></li><li><a href="#services">Gutter Cleaning</a></li><li><a href="#services">Roof Cleaning</a></li><li><a href="#services">Driveway Cleaning</a></li></ul></div>
       <div><h4>Contact</h4><ul><li><a href="tel:07534447688">07534 447688</a></li><li>Barry, Vale of Glamorgan</li><li style="margin-top:1rem"><a href="#services">Services</a></li><li><a href="#gallery">Gallery</a></li><li><a href="#reviews">Reviews</a></li><li><a href="#about">About</a></li></ul></div>
     </div>
-    <div class="footer-bottom"><p>&copy; 2026 AC Windows & Cleaning Services. All rights reserved.</p><p style="margin-top:0.5rem"><a href="https://tripletendigits.com" target="_blank" rel="noopener noreferrer" style="color:rgba(255,255,255,0.5);transition:color 0.25s">Triple Ten Digits | Competition-crushing websites</a></p></div>
+    <div class="footer-bottom"><p>&copy; 2026 AC Windows & Cleaning Services. All rights reserved.</p><p style="margin-top:0.5rem"><a href="https://tripletendigits.com" target="_blank" rel="noopener noreferrer" class="ttd-link">Triple Ten Digits | Competition-crushing websites</a></p></div>
   </footer>
 
 
