@@ -314,22 +314,28 @@
       .services-layout{grid-template-columns:1fr}
       .service-card-featured{grid-column:span 1;grid-template-columns:1fr}
       .service-card-featured .service-card-img{min-height:200px}
+      .service-card-body{text-align:center}
+      .service-card-body h3{justify-content:center}
+      .service-card-featured .service-card-body{text-align:center}
       .process-steps-row{grid-template-columns:repeat(2,1fr);gap:2rem}
       .process-steps-row::before{display:none}
       .about-grid{grid-template-columns:1fr;text-align:center}
       .about-img-wrapper{max-width:340px;margin:0 auto}
       .about-img-wrapper::after{display:none}
+      .about-content{text-align:center}
+      .about-quote{text-align:center}
       .faq-inner{grid-template-columns:1fr}
       .faq-left{position:static;text-align:center}
       .footer-inner{grid-template-columns:1fr;text-align:center}
       .footer-brand{display:flex;flex-direction:column;align-items:center}
       .footer-brand p{margin:0 auto}
+      .footer ul{display:flex;flex-direction:column;align-items:center}
       .trust-bar-inner{grid-template-columns:repeat(2,1fr)}
     }
     @media(max-width:768px){
       :root{--hdr:60px}
-      .header-nav,.header-phone{display:none}
-      .hamburger{display:flex}
+      .header-nav,.header-phone,.header-cta{display:none}
+      .hamburger{display:none}
       .mobile-cta-bar{display:block}
       body{padding-bottom:70px}
       .hero{padding-top:calc(var(--hdr) + 2rem);min-height:auto}
@@ -337,9 +343,14 @@
       .video-col iframe{min-height:260px}
       .gallery-masonry{columns:2;column-gap:0.5rem}
       .gallery-item{margin-bottom:0.5rem}
-      .about-content{text-align:left}
-      .about-content h2,.about-content .label{text-align:center}
-      .about-quote{text-align:left}
+      .about-content{text-align:center}
+      .about-quote{text-align:center}
+      .service-card-body{text-align:center}
+      .service-card-body h3{justify-content:center}
+      .service-card-featured .service-card-body{text-align:center}
+      .faq-left{display:flex;flex-direction:column;align-items:center}
+      .faq-left .btn{width:auto}
+      .faq-answer p{text-align:left}
       .btn{width:100%;padding:16px 24px}
       .hero-buttons .btn{width:auto}
       .areas-tags{gap:0.4rem}
@@ -354,6 +365,7 @@
       .video-col iframe{min-height:200px}
       .gallery-masonry{columns:2}
       .trust-bar-inner{grid-template-columns:1fr 1fr}
+      .header-cta{display:none}
     }
   </style>
 </head>
