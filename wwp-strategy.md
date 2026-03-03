@@ -90,7 +90,7 @@ Call the phone number for a free, no-obligation quote.
 
 3. **BUILD CERTAINTY (Gallery + How It Works)** — Overwhelming visual proof via before/after gallery. Then explain the simple process to reduce anxiety. Show them exactly what to expect.
 
-4. **BUILD TRUST (Reviews + About)** — Social proof from real customers (or realistic placeholders). Then the founder story — Anthony's face, his story, his commitment. Personal connection.
+4. **BUILD TRUST (Reviews + About)** — Social proof from real customers (or realistic placeholders). Then the founder story — Antony's face, his story, his commitment. Personal connection.
 
 5. **HANDLE OBJECTIONS (FAQ)** — Address every hesitation directly. Cost, reliability, insurance, weather, payment methods.
 

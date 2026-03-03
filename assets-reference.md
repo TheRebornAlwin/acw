@@ -4,7 +4,7 @@
 - Header/Footer Logo: https://4p4uvw3d9w.ufs.sh/f/GjfEcLvWS9LJCKuuEyJ48yVYURZTOdogIpMDvf52EiWr3Nn0
 
 ## Owner Photo (About Section)
-- Anthony's Photo: https://4p4uvw3d9w.ufs.sh/f/GjfEcLvWS9LJ7KtzDVcTIOkq29UedDfAsalv0EVj5Y67xuPM
+- Antony's Photo: https://4p4uvw3d9w.ufs.sh/f/GjfEcLvWS9LJ7KtzDVcTIOkq29UedDfAsalv0EVj5Y67xuPM
 
 ## Gallery Images (General Work)
 1. https://4p4uvw3d9w.ufs.sh/f/GjfEcLvWS9LJr0GAQUFBN2rQxEdLJ0fbephDTgzFIyt6qXiU
@@ -71,7 +71,7 @@
 
 ## Business Details
 - Business Name: AC Windows & Cleaning Services
-- Owner: Anthony
+- Owner: Antony
 - Location: Barry (and surrounding areas), Cardiff
 - Services: Window Cleaning, Pressure Washing/Cleaning, Gutter Cleaning, Roof Cleaning, Driveway Cleaning
 - CTA: Phone call (placeholder number)
